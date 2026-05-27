@@ -36,16 +36,16 @@ checks. See each repository README for language-specific details.
 
 | Language | Repository | Current tag |
 | --- | --- | --- |
-| Go | [`crawlora-go-sdk`](https://github.com/Crawlora-org/crawlora-go-sdk) | `v1.2.0-sdk.4` |
-| TypeScript / JavaScript | [`crawlora-typescript-sdk`](https://github.com/Crawlora-org/crawlora-typescript-sdk) | `v1.2.0-sdk.4` |
-| Python | [`crawlora-python-sdk`](https://github.com/Crawlora-org/crawlora-python-sdk) | `v1.2.0-sdk.4` |
+| Go | [`crawlora-go-sdk`](https://github.com/Crawlora-org/crawlora-go-sdk) | `v1.2.0-sdk.5` |
+| TypeScript / JavaScript | [`crawlora-typescript-sdk`](https://github.com/Crawlora-org/crawlora-typescript-sdk) | `v1.2.0-sdk.5` |
+| Python | [`crawlora-python-sdk`](https://github.com/Crawlora-org/crawlora-python-sdk) | `v1.2.0-sdk.5` |
 
 Install:
 
 ```sh
-go get github.com/Crawlora-org/crawlora-go-sdk@v1.2.0-sdk.4
-npm install git+https://github.com/Crawlora-org/crawlora-typescript-sdk.git#v1.2.0-sdk.4
-pip install "git+https://github.com/Crawlora-org/crawlora-python-sdk.git@v1.2.0-sdk.4"
+go get github.com/Crawlora-org/crawlora-go-sdk@v1.2.0-sdk.5
+npm install git+https://github.com/Crawlora-org/crawlora-typescript-sdk.git#v1.2.0-sdk.5
+pip install "git+https://github.com/Crawlora-org/crawlora-python-sdk.git@v1.2.0-sdk.5"
 ```
 
 Python example:
@@ -59,6 +59,9 @@ result = crawlora.bing.search(q="coffee shops", count=10)
 
 Go and TypeScript also expose generated typed endpoint parameters. Python ships
 type stubs for endpoint groups and keyword parameters.
+
+The future npm package target is `@crawlora-org/sdk`; TypeScript examples should
+import from that package name. The future PyPI package target is `crawlora`.
 
 ## API Coverage
 
