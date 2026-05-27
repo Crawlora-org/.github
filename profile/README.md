@@ -29,24 +29,28 @@ curl -sS \
 
 ## SDKs
 
-Git-installable beta SDKs are available for the current public API contract.
-They include API-key auth, base URL overrides, retries, per-request options,
-grouped endpoint access, generated typed endpoint helpers, and CI-backed release
-checks. See each repository README for language-specific details.
+Beta SDKs are available for the current public API contract. They include
+API-key auth, base URL overrides, retries, per-request options, grouped endpoint
+access, generated typed endpoint helpers, and CI-backed release checks. See each
+repository README for language-specific details.
 
-| Language | Repository | Current tag |
+| Language | Repository | Current release |
 | --- | --- | --- |
-| Go | [`crawlora-go-sdk`](https://github.com/Crawlora-org/crawlora-go-sdk) | `v1.2.0-sdk.5` |
-| TypeScript / JavaScript | [`crawlora-typescript-sdk`](https://github.com/Crawlora-org/crawlora-typescript-sdk) | `v1.2.0-sdk.5` |
-| Python | [`crawlora-python-sdk`](https://github.com/Crawlora-org/crawlora-python-sdk) | `v1.2.0-sdk.5` |
+| Go | [`crawlora-go-sdk`](https://github.com/Crawlora-org/crawlora-go-sdk) | `latest` for current SDK version `v1.2.0-sdk.8` |
+| TypeScript / JavaScript | [`crawlora-typescript-sdk`](https://github.com/Crawlora-org/crawlora-typescript-sdk) | `latest` for current SDK version `v1.2.0-sdk.8` / `@crawlora-org/sdk@1.2.0-sdk.8` |
+| Python | [`crawlora-python-sdk`](https://github.com/Crawlora-org/crawlora-python-sdk) | `latest` for current SDK version `v1.2.0-sdk.8` |
 
 Install:
 
 ```sh
-go get github.com/Crawlora-org/crawlora-go-sdk@v1.2.0-sdk.5
-npm install git+https://github.com/Crawlora-org/crawlora-typescript-sdk.git#v1.2.0-sdk.5
-pip install "git+https://github.com/Crawlora-org/crawlora-python-sdk.git@v1.2.0-sdk.5"
+go get github.com/Crawlora-org/crawlora-go-sdk@latest
+npm config set @crawlora-org:registry https://npm.pkg.github.com
+npm install @crawlora-org/sdk@latest
+pip install "git+https://github.com/Crawlora-org/crawlora-python-sdk.git@latest"
 ```
+
+For reproducible installs, pin `v1.2.0-sdk.8` for Git-based SDKs and
+`@crawlora-org/sdk@1.2.0-sdk.8` for TypeScript.
 
 Python example:
 
@@ -60,8 +64,9 @@ result = crawlora.bing.search(q="coffee shops", count=10)
 Go and TypeScript also expose generated typed endpoint parameters. Python ships
 type stubs for endpoint groups and keyword parameters.
 
-The future npm package target is `@crawlora-org/sdk`; TypeScript examples should
-import from that package name. The future PyPI package target is `crawlora`.
+TypeScript is published to GitHub Packages as `@crawlora-org/sdk`. The future
+PyPI package target is `crawlora`; until PyPI publication is enabled, install
+the Python SDK from Git tags.
 
 ## API Coverage
 
@@ -82,5 +87,5 @@ responses. Current endpoint families include:
 The SDKs are generated from Crawlora's public API contract and include small
 hand-written wrappers for authentication, base URL override, request execution,
 and grouped endpoint access. Public endpoint changes are reflected in the API
-docs and regenerated SDK contracts. SDK releases are currently Git beta tags,
-not npm or PyPI registry publications.
+docs and regenerated SDK contracts. SDK releases use explicit beta tags plus a
+moving `latest` tag; the TypeScript SDK is also published to GitHub Packages.
