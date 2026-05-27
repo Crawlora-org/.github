@@ -36,9 +36,9 @@ repository README for language-specific details.
 
 | Language | Repository | Current release |
 | --- | --- | --- |
-| Go | [`crawlora-go-sdk`](https://github.com/Crawlora-org/crawlora-go-sdk) | `latest` for current SDK version `v1.2.0-sdk.8` |
-| TypeScript / JavaScript | [`crawlora-typescript-sdk`](https://github.com/Crawlora-org/crawlora-typescript-sdk) | `latest` for current SDK version `v1.2.0-sdk.8` / `@crawlora-org/sdk@1.2.0-sdk.8` |
-| Python | [`crawlora-python-sdk`](https://github.com/Crawlora-org/crawlora-python-sdk) | `latest` for current SDK version `v1.2.0-sdk.8` |
+| Go | [`crawlora-go-sdk`](https://github.com/Crawlora-org/crawlora-go-sdk) | `latest` for current SDK version `v1.2.0-sdk.9` |
+| TypeScript / JavaScript | [`crawlora-typescript-sdk`](https://github.com/Crawlora-org/crawlora-typescript-sdk) | `latest` for current SDK version `v1.2.0-sdk.9` / `@crawlora-org/sdk@1.2.0-sdk.9` |
+| Python | [`crawlora-python-sdk`](https://github.com/Crawlora-org/crawlora-python-sdk) | `latest` for current SDK version `v1.2.0-sdk.9` |
 
 Install:
 
@@ -49,8 +49,8 @@ npm install @crawlora-org/sdk@latest
 pip install "git+https://github.com/Crawlora-org/crawlora-python-sdk.git@latest"
 ```
 
-For reproducible installs, pin `v1.2.0-sdk.8` for Git-based SDKs and
-`@crawlora-org/sdk@1.2.0-sdk.8` for TypeScript.
+For reproducible installs, pin `v1.2.0-sdk.9` for Git-based SDKs and
+`@crawlora-org/sdk@1.2.0-sdk.9` for TypeScript.
 
 Python example:
 
