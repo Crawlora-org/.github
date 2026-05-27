@@ -29,16 +29,26 @@ curl -sS \
 
 ## SDKs
 
-Git-only beta SDKs are available for the current public API contract. See each
-repository README for language-specific installation notes.
+Git-installable beta SDKs are available for the current public API contract.
+They include API-key auth, base URL overrides, retries, per-request options,
+grouped endpoint access, generated typed endpoint helpers, and CI-backed release
+checks. See each repository README for language-specific details.
 
 | Language | Repository | Current tag |
 | --- | --- | --- |
-| Go | [`crawlora-go-sdk`](https://github.com/Crawlora-org/crawlora-go-sdk) | `v1.2.0-sdk.1` |
-| TypeScript / JavaScript | [`crawlora-typescript-sdk`](https://github.com/Crawlora-org/crawlora-typescript-sdk) | `v1.2.0-sdk.1` |
-| Python | [`crawlora-python-sdk`](https://github.com/Crawlora-org/crawlora-python-sdk) | `v1.2.0-sdk.1` |
+| Go | [`crawlora-go-sdk`](https://github.com/Crawlora-org/crawlora-go-sdk) | `v1.2.0-sdk.4` |
+| TypeScript / JavaScript | [`crawlora-typescript-sdk`](https://github.com/Crawlora-org/crawlora-typescript-sdk) | `v1.2.0-sdk.4` |
+| Python | [`crawlora-python-sdk`](https://github.com/Crawlora-org/crawlora-python-sdk) | `v1.2.0-sdk.4` |
 
-Example:
+Install:
+
+```sh
+go get github.com/Crawlora-org/crawlora-go-sdk@v1.2.0-sdk.4
+npm install git+https://github.com/Crawlora-org/crawlora-typescript-sdk.git#v1.2.0-sdk.4
+pip install "git+https://github.com/Crawlora-org/crawlora-python-sdk.git@v1.2.0-sdk.4"
+```
+
+Python example:
 
 ```python
 from crawlora import CrawloraClient
@@ -46,6 +56,9 @@ from crawlora import CrawloraClient
 crawlora = CrawloraClient(api_key="...")
 result = crawlora.bing.search(q="coffee shops", count=10)
 ```
+
+Go and TypeScript also expose generated typed endpoint parameters. Python ships
+type stubs for endpoint groups and keyword parameters.
 
 ## API Coverage
 
@@ -66,4 +79,5 @@ responses. Current endpoint families include:
 The SDKs are generated from Crawlora's public API contract and include small
 hand-written wrappers for authentication, base URL override, request execution,
 and grouped endpoint access. Public endpoint changes are reflected in the API
-docs and regenerated SDK contracts.
+docs and regenerated SDK contracts. SDK releases are currently Git beta tags,
+not npm or PyPI registry publications.
