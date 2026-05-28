@@ -31,27 +31,26 @@ curl -sS \
 
 Beta SDKs are available for the current public API contract. They include
 API-key auth, base URL overrides, retries, per-request options, grouped endpoint
-access, generated typed endpoint helpers, typed dynamic operation calls, and
-CI-backed release checks. See each repository README for language-specific
-details.
+access, generated typed endpoint helpers, typed dynamic operation calls,
+operation reference docs, usage recipes, and CI-backed release checks. See each
+repository README for language-specific details.
 
 | Language | Repository | Current release |
 | --- | --- | --- |
-| Go | [`crawlora-go-sdk`](https://github.com/Crawlora-org/crawlora-go-sdk) | `latest` for current SDK version `v1.2.0-sdk.11` |
-| TypeScript / JavaScript | [`crawlora-typescript-sdk`](https://github.com/Crawlora-org/crawlora-typescript-sdk) | `latest` for current SDK version `v1.2.0-sdk.11` / `@crawlora-org/sdk@1.2.0-sdk.11` |
-| Python | [`crawlora-python-sdk`](https://github.com/Crawlora-org/crawlora-python-sdk) | `latest` for current SDK version `v1.2.0-sdk.11` |
+| Go | [`crawlora-go-sdk`](https://github.com/Crawlora-org/crawlora-go-sdk) | `latest` for current SDK version `v1.2.0-sdk.12` |
+| TypeScript / JavaScript | [`crawlora-typescript-sdk`](https://github.com/Crawlora-org/crawlora-typescript-sdk) | `latest` for current SDK version `v1.2.0-sdk.12` / `@crawlora-org/sdk@1.2.0-sdk.12` |
+| Python | [`crawlora-python-sdk`](https://github.com/Crawlora-org/crawlora-python-sdk) | `latest` for current SDK version `v1.2.0-sdk.12` |
 
 Install:
 
 ```sh
 go get github.com/Crawlora-org/crawlora-go-sdk@latest
-npm config set @crawlora-org:registry https://npm.pkg.github.com
 npm install @crawlora-org/sdk@latest
 pip install "git+https://github.com/Crawlora-org/crawlora-python-sdk.git@latest"
 ```
 
-For reproducible installs, pin `v1.2.0-sdk.11` for Git-based SDKs and
-`@crawlora-org/sdk@1.2.0-sdk.11` for TypeScript.
+For reproducible installs, pin `v1.2.0-sdk.12` for Git-based SDKs and
+`@crawlora-org/sdk@1.2.0-sdk.12` for TypeScript.
 
 Python example:
 
@@ -66,9 +65,9 @@ Go and TypeScript also expose generated typed endpoint parameters. Python ships
 type stubs for endpoint groups, keyword parameters, and typed dynamic operation
 calls.
 
-TypeScript is published to GitHub Packages as `@crawlora-org/sdk`. The future
-PyPI package target is `crawlora`; until PyPI publication is enabled, install
-the Python SDK from Git tags.
+TypeScript is published to npmjs and mirrored to GitHub Packages as
+`@crawlora-org/sdk`. The future PyPI package target is `crawlora`; until PyPI
+publication is enabled, install the Python SDK from Git tags.
 
 ## API Coverage
 
