@@ -69,6 +69,21 @@ TypeScript is published to npmjs and mirrored to GitHub Packages as
 `@crawlora-org/sdk`. The future PyPI package target is `crawlora`; until PyPI
 publication is enabled, install the Python SDK from Git tags.
 
+## Integrations
+
+Crawlora also ships ready-made integrations for AI agents and the Model Context
+Protocol (MCP). The hosted MCP server at `https://mcp.crawlora.net/mcp` exposes
+the public API as ~150 MCP tools using stable `family.action` names.
+
+| Integration | Repository | What it is |
+| --- | --- | --- |
+| OpenClaw | [`crawlora-openclaw-skill`](https://github.com/Crawlora-org/crawlora-openclaw-skill) | ClawHub MCP skill plus a native tool plugin for the [OpenClaw](https://github.com/openclaw/openclaw) personal AI agent. |
+
+OpenClaw skills are MCP servers, so the skill connects OpenClaw straight to the
+hosted Crawlora MCP server — add it to `~/.openclaw/openclaw.json` (or run
+`openclaw mcp add`) and authenticate with your Crawlora API key. See the
+repository README for setup.
+
 ## API Coverage
 
 Crawlora focuses on public, credential-free data sources and stable normalized
