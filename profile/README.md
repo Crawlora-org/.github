@@ -41,9 +41,9 @@ checks. See each repository README for language-specific details.
 | Go | [`crawlora-go-sdk`](https://github.com/Crawlora-org/crawlora-go-sdk) | `latest` for current SDK version `v1.4.0-sdk.1` |
 | TypeScript / JavaScript | [`crawlora-typescript-sdk`](https://github.com/Crawlora-org/crawlora-typescript-sdk) | `latest` for current SDK version `v1.4.0-sdk.1` / `@crawlora-org/sdk@1.4.0-sdk.1` |
 | Python | [`crawlora-python-sdk`](https://github.com/Crawlora-org/crawlora-python-sdk) | `latest` for current SDK version `v1.4.0-sdk.1` |
-| Ruby | [`crawlora-ruby-sdk`](https://github.com/Crawlora-org/crawlora-ruby-sdk) | source on `main`; first tag + RubyGems (`crawlora`) publication pending |
-| Java / JVM | [`crawlora-java-sdk`](https://github.com/Crawlora-org/crawlora-java-sdk) | source on `main`; first tag + Maven Central (`net.crawlora:crawlora-sdk`) publication pending |
-| PHP | [`crawlora-php-sdk`](https://github.com/Crawlora-org/crawlora-php-sdk) | source on `main`; first tag + Packagist (`crawlora/sdk`) publication pending |
+| Ruby | [`crawlora-ruby-sdk`](https://github.com/Crawlora-org/crawlora-ruby-sdk) | `v1.5.0-sdk.1` / `latest` — gem `crawlora` on GitHub Packages; RubyGems publication pending |
+| Java / JVM | [`crawlora-java-sdk`](https://github.com/Crawlora-org/crawlora-java-sdk) | `v1.5.0-sdk.1` / `latest` — `net.crawlora:crawlora-sdk` on GitHub Packages; Maven Central publication pending |
+| PHP | [`crawlora-php-sdk`](https://github.com/Crawlora-org/crawlora-php-sdk) | `v1.5.0-sdk.1` / `latest` — install from Git; Packagist publication pending |
 
 Install:
 
@@ -56,20 +56,38 @@ pip install "git+https://github.com/Crawlora-org/crawlora-python-sdk.git@latest"
 For reproducible installs, pin `v1.4.0-sdk.1` for Git-based SDKs and
 `@crawlora-org/sdk@1.4.0-sdk.1` for TypeScript.
 
-The Ruby, Java, and PHP SDKs are newly published as source repositories and
-carry the same generated contract and client features. Registry publication is
-in progress — `crawlora` on RubyGems, `net.crawlora:crawlora-sdk` on Maven
-Central, and `crawlora/sdk` on Packagist — so install them from the repository
-sources for now:
+The Ruby, Java, and PHP SDKs are released at `v1.5.0-sdk.1` (with a moving
+`latest` tag) and carry the same generated contract and client features. The
+Ruby and Java artifacts are published to GitHub Packages; public-registry
+publication — `crawlora` on RubyGems, `net.crawlora:crawlora-sdk` on Maven
+Central, and `crawlora/sdk` on Packagist — is in progress.
 
 ```sh
-# Ruby (from Git until the gem is published)
+# Ruby — from GitHub Packages (authenticate the source with a GitHub token):
+gem install crawlora --source "https://rubygems.pkg.github.com/Crawlora-org"
+# or from Git without auth:
 gem install specific_install && gem specific_install https://github.com/Crawlora-org/crawlora-ruby-sdk.git
-# PHP (Composer VCS until the package is on Packagist)
+
+# PHP — Composer from the Git repo until the Packagist import lands:
 composer config repositories.crawlora vcs https://github.com/Crawlora-org/crawlora-php-sdk
 composer require crawlora/sdk:dev-main
-# Java — clone and build with Maven until the artifact is on Maven Central
-git clone https://github.com/Crawlora-org/crawlora-java-sdk
+```
+
+Java — from GitHub Packages, add the repository and dependency to your
+`pom.xml` (GitHub Packages requires a token in `~/.m2/settings.xml`):
+
+```xml
+<repositories>
+  <repository>
+    <id>github</id>
+    <url>https://maven.pkg.github.com/Crawlora-org/crawlora-java-sdk</url>
+  </repository>
+</repositories>
+<dependency>
+  <groupId>net.crawlora</groupId>
+  <artifactId>crawlora-sdk</artifactId>
+  <version>1.5.0-sdk.1</version>
+</dependency>
 ```
 
 Python example:
