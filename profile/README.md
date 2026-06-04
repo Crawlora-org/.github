@@ -29,17 +29,21 @@ curl -sS \
 
 ## SDKs
 
-Beta SDKs are available for the current public API contract. They include
-API-key auth, base URL overrides, retries, per-request options, grouped endpoint
-access, generated typed endpoint helpers, typed dynamic operation calls,
-operation reference docs, usage recipes, and CI-backed release checks. See each
-repository README for language-specific details.
+Beta SDKs are available for the current public API contract in six languages —
+Go, TypeScript/JavaScript, Python, Ruby, Java, and PHP. They include API-key
+auth, base URL overrides, retries, per-request options, grouped endpoint access,
+generated typed endpoint helpers, typed dynamic operation calls, pagination,
+middleware hooks, operation reference docs, usage recipes, and CI-backed release
+checks. See each repository README for language-specific details.
 
 | Language | Repository | Current release |
 | --- | --- | --- |
 | Go | [`crawlora-go-sdk`](https://github.com/Crawlora-org/crawlora-go-sdk) | `latest` for current SDK version `v1.4.0-sdk.1` |
 | TypeScript / JavaScript | [`crawlora-typescript-sdk`](https://github.com/Crawlora-org/crawlora-typescript-sdk) | `latest` for current SDK version `v1.4.0-sdk.1` / `@crawlora-org/sdk@1.4.0-sdk.1` |
 | Python | [`crawlora-python-sdk`](https://github.com/Crawlora-org/crawlora-python-sdk) | `latest` for current SDK version `v1.4.0-sdk.1` |
+| Ruby | [`crawlora-ruby-sdk`](https://github.com/Crawlora-org/crawlora-ruby-sdk) | source on `main`; first tag + RubyGems (`crawlora`) publication pending |
+| Java / JVM | [`crawlora-java-sdk`](https://github.com/Crawlora-org/crawlora-java-sdk) | source on `main`; first tag + Maven Central (`net.crawlora:crawlora-sdk`) publication pending |
+| PHP | [`crawlora-php-sdk`](https://github.com/Crawlora-org/crawlora-php-sdk) | source on `main`; first tag + Packagist (`crawlora/sdk`) publication pending |
 
 Install:
 
@@ -51,6 +55,22 @@ pip install "git+https://github.com/Crawlora-org/crawlora-python-sdk.git@latest"
 
 For reproducible installs, pin `v1.4.0-sdk.1` for Git-based SDKs and
 `@crawlora-org/sdk@1.4.0-sdk.1` for TypeScript.
+
+The Ruby, Java, and PHP SDKs are newly published as source repositories and
+carry the same generated contract and client features. Registry publication is
+in progress — `crawlora` on RubyGems, `net.crawlora:crawlora-sdk` on Maven
+Central, and `crawlora/sdk` on Packagist — so install them from the repository
+sources for now:
+
+```sh
+# Ruby (from Git until the gem is published)
+gem install specific_install && gem specific_install https://github.com/Crawlora-org/crawlora-ruby-sdk.git
+# PHP (Composer VCS until the package is on Packagist)
+composer config repositories.crawlora vcs https://github.com/Crawlora-org/crawlora-php-sdk
+composer require crawlora/sdk:dev-main
+# Java — clone and build with Maven until the artifact is on Maven Central
+git clone https://github.com/Crawlora-org/crawlora-java-sdk
+```
 
 Python example:
 
