@@ -41,7 +41,7 @@ checks. See each repository README for language-specific details.
 | Go | [`crawlora-go-sdk`](https://github.com/Crawlora-org/crawlora-go-sdk) | `latest` for current SDK version `v1.4.0-sdk.1` |
 | TypeScript / JavaScript | [`crawlora-typescript-sdk`](https://github.com/Crawlora-org/crawlora-typescript-sdk) | `latest` for current SDK version `v1.4.0-sdk.1` / `@crawlora-org/sdk@1.4.0-sdk.1` |
 | Python | [`crawlora-python-sdk`](https://github.com/Crawlora-org/crawlora-python-sdk) | `latest` for current SDK version `v1.4.0-sdk.1` |
-| Ruby | [`crawlora-ruby-sdk`](https://github.com/Crawlora-org/crawlora-ruby-sdk) | `v1.5.0-sdk.1` / `latest` — gem [`crawlora`](https://rubygems.org/gems/crawlora) on RubyGems (and GitHub Packages) |
+| Ruby | [`crawlora-ruby-sdk`](https://github.com/Crawlora-org/crawlora-ruby-sdk) | `v1.5.0-sdk.2` / `latest` — gem [`crawlora`](https://rubygems.org/gems/crawlora) on RubyGems (and GitHub Packages) |
 | Java / JVM | [`crawlora-java-sdk`](https://github.com/Crawlora-org/crawlora-java-sdk) | `v1.5.0-sdk.1` / `latest` — `net.crawlora:crawlora-sdk` on GitHub Packages; Maven Central publication pending |
 | PHP | [`crawlora-php-sdk`](https://github.com/Crawlora-org/crawlora-php-sdk) | `v1.5.0-sdk.1` / `latest` — install from Git; Packagist publication pending |
 
