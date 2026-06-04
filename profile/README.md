@@ -40,7 +40,7 @@ checks. See each repository README for language-specific details.
 | --- | --- | --- |
 | Go | [`crawlora-go-sdk`](https://github.com/Crawlora-org/crawlora-go-sdk) | `latest` for current SDK version `v1.4.0-sdk.1` |
 | TypeScript / JavaScript | [`crawlora-typescript-sdk`](https://github.com/Crawlora-org/crawlora-typescript-sdk) | `latest` for current SDK version `v1.4.0-sdk.1` / `@crawlora-org/sdk@1.4.0-sdk.1` |
-| Python | [`crawlora-python-sdk`](https://github.com/Crawlora-org/crawlora-python-sdk) | `latest` for current SDK version `v1.4.0-sdk.1` |
+| Python | [`crawlora-python-sdk`](https://github.com/Crawlora-org/crawlora-python-sdk) | [`crawlora`](https://pypi.org/project/crawlora/) on PyPI (`pip install --pre crawlora`) |
 | Ruby | [`crawlora-ruby-sdk`](https://github.com/Crawlora-org/crawlora-ruby-sdk) | `v1.5.0-sdk.2` / `latest` — gem [`crawlora`](https://rubygems.org/gems/crawlora) on RubyGems (and GitHub Packages) |
 | Java / JVM | [`crawlora-java-sdk`](https://github.com/Crawlora-org/crawlora-java-sdk) | `v1.5.0-sdk.2` / `latest` — [`net.crawlora:crawlora-sdk`](https://central.sonatype.com/artifact/net.crawlora/crawlora-sdk) on Maven Central (and GitHub Packages) |
 | PHP | [`crawlora-php-sdk`](https://github.com/Crawlora-org/crawlora-php-sdk) | `latest` (dev) — [`crawlora/sdk`](https://packagist.org/packages/crawlora/sdk) on Packagist (`^1.5@dev`) |
@@ -50,7 +50,7 @@ Install:
 ```sh
 go get github.com/Crawlora-org/crawlora-go-sdk@latest
 npm install @crawlora-org/sdk@latest
-pip install "git+https://github.com/Crawlora-org/crawlora-python-sdk.git@latest"
+pip install --pre crawlora
 ```
 
 For reproducible installs, pin `v1.4.0-sdk.1` for Git-based SDKs and
@@ -93,8 +93,8 @@ type stubs for endpoint groups, keyword parameters, and typed dynamic operation
 calls.
 
 TypeScript is published to npmjs and mirrored to GitHub Packages as
-`@crawlora-org/sdk`. The future PyPI package target is `crawlora`; until PyPI
-publication is enabled, install the Python SDK from Git tags.
+`@crawlora-org/sdk`. Python is published to PyPI as `crawlora` (a `1.5.0.dev1`
+prerelease — install with `pip install --pre crawlora`).
 
 ## Integrations
 
