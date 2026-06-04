@@ -38,8 +38,8 @@ checks. See each repository README for language-specific details.
 
 | Language | Repository | Current release |
 | --- | --- | --- |
-| Go | [`crawlora-go-sdk`](https://github.com/Crawlora-org/crawlora-go-sdk) | `latest` for current SDK version `v1.4.0-sdk.1` |
-| TypeScript / JavaScript | [`crawlora-typescript-sdk`](https://github.com/Crawlora-org/crawlora-typescript-sdk) | `latest` for current SDK version `v1.4.0-sdk.1` / `@crawlora-org/sdk@1.4.0-sdk.1` |
+| Go | [`crawlora-go-sdk`](https://github.com/Crawlora-org/crawlora-go-sdk) | `latest` for current SDK version `v1.5.0-sdk.2` |
+| TypeScript / JavaScript | [`crawlora-typescript-sdk`](https://github.com/Crawlora-org/crawlora-typescript-sdk) | `latest` for current SDK version `v1.5.0-sdk.2` / `@crawlora-org/sdk@1.5.0-sdk.2` on npm |
 | Python | [`crawlora-python-sdk`](https://github.com/Crawlora-org/crawlora-python-sdk) | [`crawlora`](https://pypi.org/project/crawlora/) on PyPI (`pip install --pre crawlora`) |
 | Ruby | [`crawlora-ruby-sdk`](https://github.com/Crawlora-org/crawlora-ruby-sdk) | `v1.5.0-sdk.2` / `latest` — gem [`crawlora`](https://rubygems.org/gems/crawlora) on RubyGems (and GitHub Packages) |
 | Java / JVM | [`crawlora-java-sdk`](https://github.com/Crawlora-org/crawlora-java-sdk) | `v1.5.0-sdk.2` / `latest` — [`net.crawlora:crawlora-sdk`](https://central.sonatype.com/artifact/net.crawlora/crawlora-sdk) on Maven Central (and GitHub Packages) |
@@ -53,8 +53,8 @@ npm install @crawlora-org/sdk@latest
 pip install --pre crawlora
 ```
 
-For reproducible installs, pin `v1.4.0-sdk.1` for Git-based SDKs and
-`@crawlora-org/sdk@1.4.0-sdk.1` for TypeScript.
+For reproducible installs, pin `v1.5.0-sdk.2` for Git-based SDKs and
+`@crawlora-org/sdk@1.5.0-sdk.2` for TypeScript.
 
 The Ruby, Java, and PHP SDKs carry the same generated contract and client
 features and are all published to their language registries: Ruby (`crawlora`)
@@ -93,7 +93,7 @@ type stubs for endpoint groups, keyword parameters, and typed dynamic operation
 calls.
 
 TypeScript is published to npmjs and mirrored to GitHub Packages as
-`@crawlora-org/sdk`. Python is published to PyPI as `crawlora` (a `1.5.0.dev1`
+`@crawlora-org/sdk`. Python is published to PyPI as `crawlora` (a `1.5.0.dev2`
 prerelease — install with `pip install --pre crawlora`).
 
 ## Integrations
