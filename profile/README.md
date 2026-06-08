@@ -38,12 +38,12 @@ checks. See each repository README for language-specific details.
 
 | Language | Repository | Current release |
 | --- | --- | --- |
-| Go | [`crawlora-go-sdk`](https://github.com/Crawlora-org/crawlora-go-sdk) | `latest` for current SDK version `v1.5.0-sdk.3` |
-| TypeScript / JavaScript | [`crawlora-typescript-sdk`](https://github.com/Crawlora-org/crawlora-typescript-sdk) | `latest` for current SDK version `v1.5.0-sdk.3` / `@crawlora-org/sdk@1.5.0-sdk.3` on npm |
+| Go | [`crawlora-go-sdk`](https://github.com/Crawlora-org/crawlora-go-sdk) | `latest` for current SDK version `v1.7.0-sdk.1` |
+| TypeScript / JavaScript | [`crawlora-typescript-sdk`](https://github.com/Crawlora-org/crawlora-typescript-sdk) | `latest` for current SDK version `v1.7.0-sdk.1` / `@crawlora-org/sdk@1.7.0-sdk.1` on npm |
 | Python | [`crawlora-python-sdk`](https://github.com/Crawlora-org/crawlora-python-sdk) | [`crawlora`](https://pypi.org/project/crawlora/) on PyPI (`pip install --pre crawlora`) |
-| Ruby | [`crawlora-ruby-sdk`](https://github.com/Crawlora-org/crawlora-ruby-sdk) | `v1.5.0-sdk.3` / `latest` — gem [`crawlora`](https://rubygems.org/gems/crawlora) on RubyGems (and GitHub Packages) |
-| Java / JVM | [`crawlora-java-sdk`](https://github.com/Crawlora-org/crawlora-java-sdk) | `v1.5.0-sdk.3` / `latest` — [`net.crawlora:crawlora-sdk`](https://central.sonatype.com/artifact/net.crawlora/crawlora-sdk) on Maven Central (and GitHub Packages) |
-| PHP | [`crawlora-php-sdk`](https://github.com/Crawlora-org/crawlora-php-sdk) | `latest` (dev) — [`crawlora/sdk`](https://packagist.org/packages/crawlora/sdk) on Packagist (`^1.5@dev`) |
+| Ruby | [`crawlora-ruby-sdk`](https://github.com/Crawlora-org/crawlora-ruby-sdk) | `v1.7.0-sdk.1` / `latest` — gem [`crawlora`](https://rubygems.org/gems/crawlora) on RubyGems (and GitHub Packages) |
+| Java / JVM | [`crawlora-java-sdk`](https://github.com/Crawlora-org/crawlora-java-sdk) | `v1.7.0-sdk.1` / `latest` — [`net.crawlora:crawlora-sdk`](https://central.sonatype.com/artifact/net.crawlora/crawlora-sdk) on Maven Central (and GitHub Packages) |
+| PHP | [`crawlora-php-sdk`](https://github.com/Crawlora-org/crawlora-php-sdk) | `latest` (dev) — [`crawlora/sdk`](https://packagist.org/packages/crawlora/sdk) on Packagist (`^1.7@dev`) |
 
 Install:
 
@@ -53,8 +53,8 @@ npm install @crawlora-org/sdk@latest
 pip install --pre crawlora
 ```
 
-For reproducible installs, pin `v1.5.0-sdk.3` for Git-based SDKs and
-`@crawlora-org/sdk@1.5.0-sdk.3` for TypeScript.
+For reproducible installs, pin `v1.7.0-sdk.1` for Git-based SDKs and
+`@crawlora-org/sdk@1.7.0-sdk.1` for TypeScript.
 
 The Ruby, Java, and PHP SDKs carry the same generated contract and client
 features and are all published to their language registries: Ruby (`crawlora`)
@@ -66,7 +66,7 @@ on RubyGems, Java (`net.crawlora:crawlora-sdk`) on Maven Central, and PHP
 gem install crawlora --pre
 
 # PHP — from Packagist (dev release; the -sdk.N tags aren't valid Composer versions):
-composer require crawlora/sdk:^1.5@dev
+composer require crawlora/sdk:^1.7@dev
 ```
 
 Java — from Maven Central (no extra repository needed):
@@ -75,7 +75,7 @@ Java — from Maven Central (no extra repository needed):
 <dependency>
   <groupId>net.crawlora</groupId>
   <artifactId>crawlora-sdk</artifactId>
-  <version>1.5.0-sdk.3</version>
+  <version>1.7.0-sdk.1</version>
 </dependency>
 ```
 
@@ -93,14 +93,14 @@ type stubs for endpoint groups, keyword parameters, and typed dynamic operation
 calls.
 
 TypeScript is published to npmjs and mirrored to GitHub Packages as
-`@crawlora-org/sdk`. Python is published to PyPI as `crawlora` (a `1.5.0.dev3`
+`@crawlora-org/sdk`. Python is published to PyPI as `crawlora` (a `1.7.0.dev1`
 prerelease — install with `pip install --pre crawlora`).
 
 ## Integrations
 
 Crawlora also ships ready-made integrations for AI agents and the Model Context
 Protocol (MCP). The hosted MCP server at `https://mcp.crawlora.net/mcp` exposes
-the public API as ~150 MCP tools using stable `family.action` names.
+the public API as ~440 MCP tools using stable `family.action` names.
 
 | Integration | Repository | What it is |
 | --- | --- | --- |
@@ -118,10 +118,12 @@ responses. Current endpoint families include:
 
 - Search and SERP data from Google, Bing, Brave, Google Trends, Google Finance,
   Yahoo Finance, and CoinGecko
+- Prediction-market data from Polymarket, Kalshi, and Metaculus
 - Marketplace and product data from Amazon, eBay, App Store, Google Play,
   Product Hunt, Etsy, Airbnb, Zillow, and TripAdvisor
-- Social and media data from YouTube, TikTok, Instagram, Spotify, Apple
-  Podcasts, JustWatch, and LinkedIn
+- Social, media, and entertainment data from YouTube, TikTok, Instagram, Reddit,
+  Spotify, Apple Podcasts, JustWatch, LinkedIn, IMDb, Rotten Tomatoes, and
+  Box Office Mojo
 - Reviews, business, and geodata from Trustpilot, Yelp, SimilarWeb,
   Crunchbase, Geocoding, and Google Maps datasets
 
