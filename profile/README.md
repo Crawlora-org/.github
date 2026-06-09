@@ -104,9 +104,24 @@ the public API as ~440 MCP tools using stable `family.action` names.
 
 | Integration | Repository | What it is |
 | --- | --- | --- |
+| MCP server | [`crawlora-mcp`](https://github.com/Crawlora-org/crawlora-mcp) | Hosted (and local stdio) Model Context Protocol server exposing the public API as ~440 MCP tools. Connect any MCP client to `https://mcp.crawlora.net/mcp`. |
+| Agent Skills | [`crawlora-skills`](https://github.com/Crawlora-org/crawlora-skills) | Installable [Agent Skills](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview) (`SKILL.md` packages) that teach any coding agent — Claude Code, Codex, Cursor, Copilot — how to fetch structured web data over the REST API. No MCP setup required. Also a Claude Code plugin marketplace. |
 | OpenClaw | [`crawlora-openclaw-skill`](https://github.com/Crawlora-org/crawlora-openclaw-skill) | ClawHub MCP skill plus a native tool plugin for the [OpenClaw](https://github.com/openclaw/openclaw) personal AI agent. |
 
-OpenClaw skills are MCP servers, so the skill connects OpenClaw straight to the
+The **Agent Skills** are standalone-REST recipes — an umbrella `crawlora` catalog
+skill plus focused `product-price-research`, `youtube-research`,
+`app-review-mining`, and `serp-keyword-research` skills. Install one (or all) into
+any agent with the `skills` CLI, then set your API key:
+
+```sh
+npx skills add github.com/Crawlora-org/crawlora-skills --skill youtube-research
+export CRAWLORA_API_KEY=...
+```
+
+Or add the repo as a Claude Code plugin marketplace:
+`/plugin marketplace add Crawlora-org/crawlora-skills`.
+
+OpenClaw skills are MCP servers, so that skill connects OpenClaw straight to the
 hosted Crawlora MCP server — add it to `~/.openclaw/openclaw.json` (or run
 `openclaw mcp add`) and authenticate with your Crawlora API key. See the
 repository README for setup.
