@@ -98,15 +98,19 @@ prerelease — install with `pip install --pre crawlora`).
 
 ## Integrations
 
-Crawlora also ships ready-made integrations for AI agents and the Model Context
-Protocol (MCP). The hosted MCP server at `https://mcp.crawlora.net/mcp` exposes
-the public API as 445 MCP tools using stable `family.action` names.
+Crawlora also ships ready-made integrations for AI agents, the Model Context
+Protocol (MCP), and no-code automation platforms. The hosted MCP server at
+`https://mcp.crawlora.net/mcp` exposes the public API as 445 MCP tools using
+stable `family.action` names.
 
 | Integration | Repository | What it is |
 | --- | --- | --- |
 | MCP server | [`crawlora-mcp`](https://github.com/Crawlora-org/crawlora-mcp) | Hosted (and local stdio) Model Context Protocol server exposing the public API as 445 MCP tools. Connect any MCP client to `https://mcp.crawlora.net/mcp`. |
 | Agent Skills | [`crawlora-skills`](https://github.com/Crawlora-org/crawlora-skills) | Installable [Agent Skills](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview) (`SKILL.md` packages) that teach any coding agent — Claude Code, Codex, Cursor, Copilot — how to fetch structured web data over the REST API. No MCP setup required. Also a Claude Code plugin marketplace. |
 | OpenClaw | [`crawlora-openclaw-skill`](https://github.com/Crawlora-org/crawlora-openclaw-skill) | ClawHub MCP skill plus a native tool plugin for the [OpenClaw](https://github.com/openclaw/openclaw) personal AI agent. |
+| Zapier | [`zapier-crawlora`](https://github.com/Crawlora-org/zapier-crawlora) | Zapier integration with Get Page Content, Web Search, and Find Website Contacts actions for no-code Zaps. |
+| n8n | [`n8n-nodes-crawlora`](https://github.com/Crawlora-org/n8n-nodes-crawlora) | n8n community node exposing the Crawlora API as resources and operations, generated from the OpenAPI spec and usable as a tool in the n8n AI Agent. |
+| Make | [`make-app-crawlora`](https://github.com/Crawlora-org/make-app-crawlora) | Custom app definition for Make — Get Page Content, Web Search, and Find Website Contacts modules plus a universal "Make an API Call" module. |
 
 The **Agent Skills** are standalone-REST recipes — an umbrella `crawlora` catalog
 skill plus focused `product-price-research`, `youtube-research`,
@@ -125,6 +129,12 @@ OpenClaw skills are MCP servers, so that skill connects OpenClaw straight to the
 hosted Crawlora MCP server — add it to `~/.openclaw/openclaw.json` (or run
 `openclaw mcp add`) and authenticate with your Crawlora API key. See the
 repository README for setup.
+
+The **Zapier**, **n8n**, and **Make** integrations wrap the same public API as
+no-code actions — get page content, web search, and find website contacts — using
+`x-api-key` authentication. The n8n node also exposes the full endpoint catalog as
+resources and operations and is usable as a tool in the n8n AI Agent. See each
+repository for the integration definition and setup.
 
 ## API Coverage
 
