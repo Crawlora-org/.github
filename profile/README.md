@@ -57,7 +57,7 @@ checks. See each repository README for language-specific details.
 | Python | [`crawlora-python-sdk`](https://github.com/Crawlora-org/crawlora-python-sdk) | [`crawlora`](https://pypi.org/project/crawlora/) on PyPI (`pip install --pre crawlora`) |
 | Ruby | [`crawlora-ruby-sdk`](https://github.com/Crawlora-org/crawlora-ruby-sdk) | `v1.18.0-sdk.1` / `latest` — gem [`crawlora`](https://rubygems.org/gems/crawlora) on RubyGems (and GitHub Packages) |
 | Java / JVM | [`crawlora-java-sdk`](https://github.com/Crawlora-org/crawlora-java-sdk) | `v1.18.0-sdk.1` / `latest` — [`net.crawlora:crawlora-sdk`](https://central.sonatype.com/artifact/net.crawlora/crawlora-sdk) on Maven Central (and GitHub Packages) |
-| PHP | [`crawlora-php-sdk`](https://github.com/Crawlora-org/crawlora-php-sdk) | `latest` (dev) — [`crawlora/sdk`](https://packagist.org/packages/crawlora/sdk) on Packagist (`^1.18@dev`) |
+| PHP | [`crawlora-php-sdk`](https://github.com/Crawlora-org/crawlora-php-sdk) | `v1.18.0-beta.1` — [`crawlora/sdk`](https://packagist.org/packages/crawlora/sdk) on Packagist (`^1.18@beta`) |
 
 Install:
 
@@ -79,8 +79,8 @@ on RubyGems, Java (`net.crawlora:crawlora-sdk`) on Maven Central, and PHP
 # Ruby — from RubyGems (a prerelease, so pass --pre):
 gem install crawlora --pre
 
-# PHP — from Packagist (dev release; the -sdk.N tags aren't valid Composer versions):
-composer require crawlora/sdk:^1.18@dev
+# PHP — Composer-valid tagged beta from Packagist:
+composer require crawlora/sdk:^1.18@beta
 ```
 
 Java — from Maven Central (no extra repository needed):
