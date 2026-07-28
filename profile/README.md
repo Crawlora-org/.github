@@ -6,10 +6,10 @@ geodata signals without maintaining scraper infrastructure yourself.
 
 ## Start Here
 
-- Website: https://crawlora.net
-- API docs: https://crawlora.net/docs
-- Playground: https://crawlora.net/playground
-- Pricing: https://crawlora.net/pricing
+- Website: https://crawlora.net?utm_source=github&utm_medium=referral&utm_campaign=github-org-profile
+- API docs: https://crawlora.net/docs?utm_source=github&utm_medium=referral&utm_campaign=github-org-profile
+- Playground: https://crawlora.net/playground?utm_source=github&utm_medium=referral&utm_campaign=github-org-profile
+- Pricing: https://crawlora.net/pricing?utm_source=github&utm_medium=referral&utm_campaign=github-org-profile
 - API status: https://uptime.crawlora.net/status/crawlora-api
 - Support: support@crawlora.net
 
