@@ -31,8 +31,8 @@ curl -sS \
 
 | Surface | Current release | Coverage |
 | --- | --- | --- |
-| Public SDK contract | `v1.30.0-sdk.1` | 882 generated operations across Go, TypeScript/JavaScript, Python, Ruby, Java, and PHP |
-| Hosted MCP | [`crawlora-mcp@1.10.0`](https://www.npmjs.com/package/crawlora-mcp) | 828 tools across 71 platform groups |
+| Public SDK contract | `v1.32.0-sdk.1` | 895 generated operations across Go, TypeScript/JavaScript, Python, Ruby, Java, and PHP |
+| Hosted MCP | [`crawlora-mcp@1.10.0`](https://www.npmjs.com/package/crawlora-mcp) | 841 tools across 76 platform groups |
 | Agent Skills | [`crawlora-skills@1.6.0`](https://github.com/Crawlora-org/crawlora-skills) | REST-based catalog and focused research skills |
 | OpenClaw | [`crawlora-openclaw-skill@1.3.0`](https://github.com/Crawlora-org/crawlora-openclaw-skill) | Hosted-MCP skill plus native tool plugin |
 | n8n | [`n8n-nodes-crawlora@0.7.0`](https://www.npmjs.com/package/n8n-nodes-crawlora) | 197 curated operations across 26 resources |
@@ -52,12 +52,12 @@ checks. See each repository README for language-specific details.
 
 | Language | Repository | Current release |
 | --- | --- | --- |
-| Go | [`crawlora-go-sdk`](https://github.com/Crawlora-org/crawlora-go-sdk) | `latest` for current SDK version `v1.30.0-sdk.1` |
-| TypeScript / JavaScript | [`crawlora-typescript-sdk`](https://github.com/Crawlora-org/crawlora-typescript-sdk) | `latest` for current SDK version `v1.30.0-sdk.1` / `@crawlora-org/sdk@1.30.0-sdk.1` on npm |
+| Go | [`crawlora-go-sdk`](https://github.com/Crawlora-org/crawlora-go-sdk) | `latest` for current SDK version `v1.32.0-sdk.1` |
+| TypeScript / JavaScript | [`crawlora-typescript-sdk`](https://github.com/Crawlora-org/crawlora-typescript-sdk) | `latest` for current SDK version `v1.32.0-sdk.1` / `@crawlora-org/sdk@1.32.0-sdk.1` on npm |
 | Python | [`crawlora-python-sdk`](https://github.com/Crawlora-org/crawlora-python-sdk) | [`crawlora`](https://pypi.org/project/crawlora/) on PyPI (`pip install --pre crawlora`) |
-| Ruby | [`crawlora-ruby-sdk`](https://github.com/Crawlora-org/crawlora-ruby-sdk) | `v1.30.0-sdk.1` / `latest` — gem [`crawlora`](https://rubygems.org/gems/crawlora) on RubyGems (and GitHub Packages) |
-| Java / JVM | [`crawlora-java-sdk`](https://github.com/Crawlora-org/crawlora-java-sdk) | `v1.30.0-sdk.1` / `latest` — [`net.crawlora:crawlora-sdk`](https://central.sonatype.com/artifact/net.crawlora/crawlora-sdk) on Maven Central (and GitHub Packages) |
-| PHP | [`crawlora-php-sdk`](https://github.com/Crawlora-org/crawlora-php-sdk) | `v1.30.0-beta.1` — [`crawlora/sdk`](https://packagist.org/packages/crawlora/sdk) on Packagist (`^1.30@beta`) |
+| Ruby | [`crawlora-ruby-sdk`](https://github.com/Crawlora-org/crawlora-ruby-sdk) | `v1.32.0-sdk.1` / `latest` — gem [`crawlora`](https://rubygems.org/gems/crawlora) on RubyGems (and GitHub Packages) |
+| Java / JVM | [`crawlora-java-sdk`](https://github.com/Crawlora-org/crawlora-java-sdk) | `v1.32.0-sdk.1` / `latest` — [`net.crawlora:crawlora-sdk`](https://central.sonatype.com/artifact/net.crawlora/crawlora-sdk) on Maven Central (and GitHub Packages) |
+| PHP | [`crawlora-php-sdk`](https://github.com/Crawlora-org/crawlora-php-sdk) | `v1.32.0-beta.1` — [`crawlora/sdk`](https://packagist.org/packages/crawlora/sdk) on Packagist (`^1.32@beta`) |
 
 Install:
 
