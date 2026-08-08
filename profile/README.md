@@ -32,8 +32,8 @@ curl -sS \
 | Surface | Current release | Coverage |
 | --- | --- | --- |
 | Public SDK contract | `v1.34.0-sdk.1` | 1041 generated operations across Go, TypeScript/JavaScript, Python, Ruby, Java, and PHP |
-| Hosted MCP | [`crawlora-mcp@1.12.0`](https://www.npmjs.com/package/crawlora-mcp) | 987 tools across 101 platform groups |
-| Agent Skills | [`crawlora-skills@1.6.0`](https://github.com/Crawlora-org/crawlora-skills) | REST-based catalog and focused research skills |
+| Hosted MCP | [`crawlora-mcp@1.13.0`](https://www.npmjs.com/package/crawlora-mcp) | 987 tools across 101 platform groups |
+| Agent Skills | [`crawlora-skills@1.7.0`](https://github.com/Crawlora-org/crawlora-skills) | REST-based catalog and focused research skills |
 | OpenClaw | [`crawlora-openclaw-skill@1.3.0`](https://github.com/Crawlora-org/crawlora-openclaw-skill) | Hosted-MCP skill plus native tool plugin |
 | n8n | [`n8n-nodes-crawlora@0.7.0`](https://www.npmjs.com/package/n8n-nodes-crawlora) | 197 curated operations across 26 resources |
 
@@ -119,8 +119,8 @@ stable `family.action` names.
 
 | Integration | Repository | What it is |
 | --- | --- | --- |
-| MCP server | [`crawlora-mcp`](https://github.com/Crawlora-org/crawlora-mcp) | Version `1.12.0`. Hosted (and local stdio) Model Context Protocol server exposing the public API as 987 MCP tools. Connect any MCP client to `https://mcp.crawlora.net/mcp`. |
-| Agent Skills | [`crawlora-skills`](https://github.com/Crawlora-org/crawlora-skills) | Version `1.6.0`. Installable [Agent Skills](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview) (`SKILL.md` packages) that teach any coding agent — Claude Code, Codex, Cursor, Copilot — how to fetch structured web data over the REST API. No MCP setup required. Also a Claude Code plugin marketplace. |
+| MCP server | [`crawlora-mcp`](https://github.com/Crawlora-org/crawlora-mcp) | Version `1.13.0`. Hosted (and local stdio) Model Context Protocol server exposing the public API as 987 MCP tools. Connect any MCP client to `https://mcp.crawlora.net/mcp`. |
+| Agent Skills | [`crawlora-skills`](https://github.com/Crawlora-org/crawlora-skills) | Version `1.7.0`. Installable [Agent Skills](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview) (`SKILL.md` packages) that teach any coding agent — Claude Code, Codex, Cursor, Copilot — how to fetch structured web data over the REST API. No MCP setup required. Also a Claude Code plugin marketplace. |
 | OpenClaw | [`crawlora-openclaw-skill`](https://github.com/Crawlora-org/crawlora-openclaw-skill) | Version `1.3.0`. ClawHub MCP skill plus a native tool plugin for the [OpenClaw](https://github.com/openclaw/openclaw) personal AI agent. |
 | Zapier | [`zapier-crawlora`](https://github.com/Crawlora-org/zapier-crawlora) | Zapier integration with Get Page Content, Web Search, and Find Website Contacts actions for no-code Zaps. |
 | n8n | [`n8n-nodes-crawlora`](https://github.com/Crawlora-org/n8n-nodes-crawlora) | Version `0.7.0`. n8n community node exposing 197 curated operations across 26 resources, generated from the OpenAPI spec and usable as a tool in the n8n AI Agent. |
