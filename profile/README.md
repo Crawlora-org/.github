@@ -35,7 +35,7 @@ curl -sS \
 | Hosted MCP | [`crawlora-mcp@1.16.2`](https://www.npmjs.com/package/crawlora-mcp) | 1873 tools across 215 platform groups |
 | Agent Skills | [`crawlora-skills@1.13.0`](https://github.com/Crawlora-org/crawlora-skills) | REST-based catalog and focused research skills |
 | OpenClaw | [`crawlora-openclaw-skill@1.3.0`](https://github.com/Crawlora-org/crawlora-openclaw-skill) | Hosted-MCP skill plus native tool plugin |
-| n8n | [`n8n-nodes-crawlora@0.7.0`](https://www.npmjs.com/package/n8n-nodes-crawlora) | 197 curated operations across 26 resources |
+| n8n | [`n8n-nodes-crawlora@0.8.0`](https://www.npmjs.com/package/n8n-nodes-crawlora) | 221 curated operations across 26 resources |
 
 The generated SDKs and MCP catalog track the same public API contract. The n8n,
 Zapier, and Make integrations intentionally expose smaller, workflow-oriented
@@ -123,7 +123,7 @@ stable `family.action` names.
 | Agent Skills | [`crawlora-skills`](https://github.com/Crawlora-org/crawlora-skills) | Version `1.13.0`. 35 bundled installable [Agent Skills](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview) (`SKILL.md` packages) plus per-platform skills that teach any coding agent — Claude Code, Codex, Cursor, Copilot — how to fetch structured web data over the REST API. No MCP setup required. Also a Claude Code plugin marketplace. |
 | OpenClaw | [`crawlora-openclaw-skill`](https://github.com/Crawlora-org/crawlora-openclaw-skill) | Version `1.3.0`. ClawHub MCP skill plus a native tool plugin for the [OpenClaw](https://github.com/openclaw/openclaw) personal AI agent. |
 | Zapier | [`zapier-crawlora`](https://github.com/Crawlora-org/zapier-crawlora) | Zapier integration with Get Page Content, Web Search, and Find Website Contacts actions for no-code Zaps. |
-| n8n | [`n8n-nodes-crawlora`](https://github.com/Crawlora-org/n8n-nodes-crawlora) | Version `0.7.0`. n8n community node exposing 197 curated operations across 26 resources, generated from the OpenAPI spec and usable as a tool in the n8n AI Agent. |
+| n8n | [`n8n-nodes-crawlora`](https://github.com/Crawlora-org/n8n-nodes-crawlora) | Version `0.8.0`. n8n community node exposing 221 curated operations across 26 resources, generated from the OpenAPI spec and usable as a tool in the n8n AI Agent. |
 | Make | [`make-app-crawlora`](https://github.com/Crawlora-org/make-app-crawlora) | Custom app definition for Make — Get Page Content, Web Search, and Find Website Contacts modules plus a universal "Make an API Call" module. |
 
 The **Agent Skills** are standalone-REST recipes — an umbrella `crawlora` catalog
