@@ -31,9 +31,9 @@ curl -sS \
 
 | Surface | Current release | Coverage |
 | --- | --- | --- |
-| Public SDK contract | `v1.42.0-sdk.2` | 3160 generated operations across Go, TypeScript/JavaScript, Python, Ruby, Java, and PHP |
-| Hosted MCP | [`crawlora-mcp@1.17.3`](https://www.npmjs.com/package/crawlora-mcp) | 3093 tools across 420 platform groups |
-| Agent Skills | [`crawlora-skills@1.24.1`](https://github.com/Crawlora-org/crawlora-skills) | REST-based catalog and focused research skills, including local competitive landscapes |
+| Public SDK contract | `v1.42.0-sdk.3` | 3160 generated operations across Go, TypeScript/JavaScript, Python, Ruby, Java, and PHP |
+| Hosted MCP | [`crawlora-mcp@1.17.4`](https://www.npmjs.com/package/crawlora-mcp) | 3094 tools across 420 platform groups |
+| Agent Skills | [`crawlora-skills@1.24.2`](https://github.com/Crawlora-org/crawlora-skills) | REST-based catalog and focused research skills, including local competitive landscapes |
 | OpenClaw | [`crawlora-openclaw-skill@1.3.0`](https://github.com/Crawlora-org/crawlora-openclaw-skill) | Hosted-MCP skill plus native tool plugin |
 | n8n | [`n8n-nodes-crawlora@0.8.0`](https://www.npmjs.com/package/n8n-nodes-crawlora) | 220 curated operations across 26 resources |
 
@@ -52,12 +52,12 @@ checks. See each repository README for language-specific details.
 
 | Language | Repository | Current release |
 | --- | --- | --- |
-| Go | [`crawlora-go-sdk`](https://github.com/Crawlora-org/crawlora-go-sdk) | `latest` for current SDK version `v1.42.0-sdk.2` |
-| TypeScript / JavaScript | [`crawlora-typescript-sdk`](https://github.com/Crawlora-org/crawlora-typescript-sdk) | `latest` for current SDK version `v1.42.0-sdk.2` / `@crawlora-org/sdk@1.42.0-sdk.2` on npm |
+| Go | [`crawlora-go-sdk`](https://github.com/Crawlora-org/crawlora-go-sdk) | `latest` for current SDK version `v1.42.0-sdk.3` |
+| TypeScript / JavaScript | [`crawlora-typescript-sdk`](https://github.com/Crawlora-org/crawlora-typescript-sdk) | `latest` for current SDK version `v1.42.0-sdk.3` / `@crawlora-org/sdk@1.42.0-sdk.3` on npm |
 | Python | [`crawlora-python-sdk`](https://github.com/Crawlora-org/crawlora-python-sdk) | [`crawlora`](https://pypi.org/project/crawlora/) on PyPI (`pip install --pre crawlora`) |
-| Ruby | [`crawlora-ruby-sdk`](https://github.com/Crawlora-org/crawlora-ruby-sdk) | `v1.42.0-sdk.2` / `latest` — gem [`crawlora`](https://rubygems.org/gems/crawlora) on RubyGems (and GitHub Packages) |
-| Java / JVM | [`crawlora-java-sdk`](https://github.com/Crawlora-org/crawlora-java-sdk) | `v1.42.0-sdk.2` / `latest` — [`net.crawlora:crawlora-sdk`](https://central.sonatype.com/artifact/net.crawlora/crawlora-sdk) on Maven Central (and GitHub Packages) |
-| PHP | [`crawlora-php-sdk`](https://github.com/Crawlora-org/crawlora-php-sdk) | `v1.42.0-beta.2` — [`crawlora/sdk`](https://packagist.org/packages/crawlora/sdk) on Packagist (`^1.42@beta`) |
+| Ruby | [`crawlora-ruby-sdk`](https://github.com/Crawlora-org/crawlora-ruby-sdk) | `v1.42.0-sdk.3` / `latest` — gem [`crawlora`](https://rubygems.org/gems/crawlora) on RubyGems (and GitHub Packages) |
+| Java / JVM | [`crawlora-java-sdk`](https://github.com/Crawlora-org/crawlora-java-sdk) | `v1.42.0-sdk.3` / `latest` — [`net.crawlora:crawlora-sdk`](https://central.sonatype.com/artifact/net.crawlora/crawlora-sdk) on Maven Central (and GitHub Packages) |
+| PHP | [`crawlora-php-sdk`](https://github.com/Crawlora-org/crawlora-php-sdk) | `v1.42.0-beta.3` — [`crawlora/sdk`](https://packagist.org/packages/crawlora/sdk) on Packagist (`^1.42@beta`) |
 
 Install:
 
@@ -67,8 +67,8 @@ npm install @crawlora-org/sdk@latest
 pip install --pre crawlora
 ```
 
-For reproducible installs, pin `v1.42.0-sdk.2` for Git-based SDKs and
-`@crawlora-org/sdk@1.42.0-sdk.2` for TypeScript.
+For reproducible installs, pin `v1.42.0-sdk.3` for Git-based SDKs and
+`@crawlora-org/sdk@1.42.0-sdk.3` for TypeScript.
 
 The Ruby, Java, and PHP SDKs carry the same generated contract and client
 features and are all published to their language registries: Ruby (`crawlora`)
@@ -89,7 +89,7 @@ Java — from Maven Central (no extra repository needed):
 <dependency>
   <groupId>net.crawlora</groupId>
   <artifactId>crawlora-sdk</artifactId>
-  <version>1.42.0-sdk.2</version>
+  <version>1.42.0-sdk.3</version>
 </dependency>
 ```
 
@@ -107,19 +107,19 @@ type stubs for endpoint groups, keyword parameters, and typed dynamic operation
 calls.
 
 TypeScript is published to npmjs and mirrored to GitHub Packages as
-`@crawlora-org/sdk`. Python is published to PyPI as `crawlora` (a `1.42.0.dev2`
+`@crawlora-org/sdk`. Python is published to PyPI as `crawlora` (a `1.42.0.dev3`
 prerelease — install with `pip install --pre crawlora`).
 
 ## Integrations
 
 Crawlora also ships ready-made integrations for AI agents, the Model Context
 Protocol (MCP), and no-code automation platforms. The hosted MCP server at
-`https://mcp.crawlora.net/mcp` exposes the public API as 3093 MCP tools using
+`https://mcp.crawlora.net/mcp` exposes the public API as 3094 MCP tools using
 stable `family.action` names.
 
 | Integration | Repository | What it is |
 | --- | --- | --- |
-| MCP server | [`crawlora-mcp`](https://github.com/Crawlora-org/crawlora-mcp) | Version `1.17.3`. Hosted (and local stdio) Model Context Protocol server exposing the public API as 3093 MCP tools. Connect any MCP client to `https://mcp.crawlora.net/mcp`. |
+| MCP server | [`crawlora-mcp`](https://github.com/Crawlora-org/crawlora-mcp) | Version `1.17.4`. Hosted (and local stdio) Model Context Protocol server exposing the public API as 3094 MCP tools. Connect any MCP client to `https://mcp.crawlora.net/mcp`. |
 | Agent Skills | [`crawlora-skills`](https://github.com/Crawlora-org/crawlora-skills) | Version `1.24.1`. 115 installable skills, including 77 bundled installable [Agent Skills](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview) (`SKILL.md` packages) plus per-platform skills that teach any coding agent — Claude Code, Codex, Cursor, Copilot — how to fetch structured web data over the REST API. This release adds luxury-resale, live-event ticketing, and dining-demand workflows alongside publisher-native news and collectibles research. No MCP setup required. Also a Claude Code plugin marketplace. |
 | OpenClaw | [`crawlora-openclaw-skill`](https://github.com/Crawlora-org/crawlora-openclaw-skill) | Version `1.3.0`. ClawHub MCP skill plus a native tool plugin for the [OpenClaw](https://github.com/openclaw/openclaw) personal AI agent. |
 | Zapier | [`zapier-crawlora`](https://github.com/Crawlora-org/zapier-crawlora) | Zapier integration with Get Page Content, Web Search, and Find Website Contacts actions for no-code Zaps. |
