@@ -33,7 +33,7 @@ curl -sS \
 | --- | --- | --- |
 | Public SDK contract | `v1.44.0-sdk.2` | 3275 generated operations across Go, TypeScript/JavaScript, Python, Ruby, Java, and PHP |
 | Hosted MCP | [`crawlora-mcp@1.17.7`](https://www.npmjs.com/package/crawlora-mcp) | 3209 tools across 438 platform groups |
-| Agent Skills | [`crawlora-skills@1.24.6`](https://github.com/Crawlora-org/crawlora-skills) | REST-based catalog and focused research skills, including local competitive landscapes and Substack creator discovery |
+| Agent Skills | [`crawlora-skills@1.24.7`](https://github.com/Crawlora-org/crawlora-skills) | REST-based catalog and focused research skills, including local competitive landscapes and Substack creator discovery |
 | OpenClaw | [`crawlora-openclaw-skill@1.3.1`](https://github.com/Crawlora-org/crawlora-openclaw-skill) | Hosted-MCP skill plus native tool plugin |
 | n8n | [`n8n-nodes-crawlora@0.8.0`](https://www.npmjs.com/package/n8n-nodes-crawlora) | 220 curated operations across 26 resources |
 
