@@ -31,7 +31,7 @@ curl -sS \
 
 | Surface | Current release | Coverage |
 | --- | --- | --- |
-| Public SDK contract | `v1.44.0-sdk.1` | 3275 generated operations across Go, TypeScript/JavaScript, Python, Ruby, Java, and PHP |
+| Public SDK contract | `v1.44.0-sdk.2` | 3275 generated operations across Go, TypeScript/JavaScript, Python, Ruby, Java, and PHP |
 | Hosted MCP | [`crawlora-mcp@1.17.7`](https://www.npmjs.com/package/crawlora-mcp) | 3209 tools across 438 platform groups |
 | Agent Skills | [`crawlora-skills@1.24.6`](https://github.com/Crawlora-org/crawlora-skills) | REST-based catalog and focused research skills, including local competitive landscapes and Substack creator discovery |
 | OpenClaw | [`crawlora-openclaw-skill@1.3.1`](https://github.com/Crawlora-org/crawlora-openclaw-skill) | Hosted-MCP skill plus native tool plugin |
@@ -52,12 +52,12 @@ checks. See each repository README for language-specific details.
 
 | Language | Repository | Current release |
 | --- | --- | --- |
-| Go | [`crawlora-go-sdk`](https://github.com/Crawlora-org/crawlora-go-sdk) | `latest` for current SDK version `v1.44.0-sdk.1` |
-| TypeScript / JavaScript | [`crawlora-typescript-sdk`](https://github.com/Crawlora-org/crawlora-typescript-sdk) | `latest` for current SDK version `v1.44.0-sdk.1` / `@crawlora-org/sdk@1.44.0-sdk.1` on npm |
+| Go | [`crawlora-go-sdk`](https://github.com/Crawlora-org/crawlora-go-sdk) | `latest` for current SDK version `v1.44.0-sdk.2` |
+| TypeScript / JavaScript | [`crawlora-typescript-sdk`](https://github.com/Crawlora-org/crawlora-typescript-sdk) | `latest` for current SDK version `v1.44.0-sdk.2` / `@crawlora-org/sdk@1.44.0-sdk.2` on npm |
 | Python | [`crawlora-python-sdk`](https://github.com/Crawlora-org/crawlora-python-sdk) | [`crawlora`](https://pypi.org/project/crawlora/) on PyPI (`pip install --pre crawlora`) |
-| Ruby | [`crawlora-ruby-sdk`](https://github.com/Crawlora-org/crawlora-ruby-sdk) | `v1.44.0-sdk.1` / `latest` — gem [`crawlora`](https://rubygems.org/gems/crawlora) on RubyGems (and GitHub Packages) |
-| Java / JVM | [`crawlora-java-sdk`](https://github.com/Crawlora-org/crawlora-java-sdk) | `v1.44.0-sdk.1` / `latest` — [`net.crawlora:crawlora-sdk`](https://central.sonatype.com/artifact/net.crawlora/crawlora-sdk) on Maven Central (and GitHub Packages) |
-| PHP | [`crawlora-php-sdk`](https://github.com/Crawlora-org/crawlora-php-sdk) | `v1.44.0-beta.1` — [`crawlora/sdk`](https://packagist.org/packages/crawlora/sdk) on Packagist (`^1.44@beta`) |
+| Ruby | [`crawlora-ruby-sdk`](https://github.com/Crawlora-org/crawlora-ruby-sdk) | `v1.44.0-sdk.2` / `latest` — gem [`crawlora`](https://rubygems.org/gems/crawlora) on RubyGems (and GitHub Packages) |
+| Java / JVM | [`crawlora-java-sdk`](https://github.com/Crawlora-org/crawlora-java-sdk) | `v1.44.0-sdk.2` / `latest` — [`net.crawlora:crawlora-sdk`](https://central.sonatype.com/artifact/net.crawlora/crawlora-sdk) on Maven Central (and GitHub Packages) |
+| PHP | [`crawlora-php-sdk`](https://github.com/Crawlora-org/crawlora-php-sdk) | `v1.44.0-beta.2` — [`crawlora/sdk`](https://packagist.org/packages/crawlora/sdk) on Packagist (`^1.44@beta`) |
 
 Install:
 
@@ -67,8 +67,8 @@ npm install @crawlora-org/sdk@latest
 pip install --pre crawlora
 ```
 
-For reproducible installs, pin `v1.44.0-sdk.1` for Git-based SDKs and
-`@crawlora-org/sdk@1.44.0-sdk.1` for TypeScript.
+For reproducible installs, pin `v1.44.0-sdk.2` for Git-based SDKs and
+`@crawlora-org/sdk@1.44.0-sdk.2` for TypeScript.
 
 The Ruby, Java, and PHP SDKs carry the same generated contract and client
 features and are all published to their language registries: Ruby (`crawlora`)
@@ -89,7 +89,7 @@ Java — from Maven Central (no extra repository needed):
 <dependency>
   <groupId>net.crawlora</groupId>
   <artifactId>crawlora-sdk</artifactId>
-  <version>1.44.0-sdk.1</version>
+  <version>1.44.0-sdk.2</version>
 </dependency>
 ```
 
@@ -107,7 +107,7 @@ type stubs for endpoint groups, keyword parameters, and typed dynamic operation
 calls.
 
 TypeScript is published to npmjs and mirrored to GitHub Packages as
-`@crawlora-org/sdk`. Python is published to PyPI as `crawlora` (a `1.44.0.dev1`
+`@crawlora-org/sdk`. Python is published to PyPI as `crawlora` (a `1.44.0.dev2`
 prerelease — install with `pip install --pre crawlora`).
 
 ## Integrations
