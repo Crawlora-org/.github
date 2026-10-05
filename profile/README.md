@@ -33,7 +33,7 @@ curl -sS \
 | --- | --- | --- |
 | Public SDK contract | `v1.44.0-sdk.2` | 3529 generated operations across Go, TypeScript/JavaScript, Python, Ruby, Java, and PHP |
 | Hosted MCP | [`crawlora-mcp@1.17.8`](https://www.npmjs.com/package/crawlora-mcp) | 3465 tools across 464 platform groups |
-| Agent Skills | [`crawlora-skills@1.24.9`](https://github.com/Crawlora-org/crawlora-skills) | 144 installable skills, including 106 bundled skills and focused workflows for book positioning, film/streaming availability, forecast comparison, insider transactions, chain-store footprints, patent landscapes, institutional holdings, flights, and used-car prices |
+| Agent Skills | [`crawlora-skills@1.24.10`](https://github.com/Crawlora-org/crawlora-skills) | 150 installable skills, including 112 bundled skills and focused workflows for app privacy, business complaints, broadcasts, game-price history, open-source shortlists, podcasts, books/film/streaming, and SEC evidence |
 | OpenClaw | [`crawlora-openclaw-skill@1.3.1`](https://github.com/Crawlora-org/crawlora-openclaw-skill) | Hosted-MCP skill plus native tool plugin |
 | n8n | [`n8n-nodes-crawlora@0.9.0`](https://www.npmjs.com/package/n8n-nodes-crawlora) | 253 curated operations across 26 resources |
 
@@ -120,14 +120,14 @@ stable `family.action` names.
 | Integration | Repository | What it is |
 | --- | --- | --- |
 | MCP server | [`crawlora-mcp`](https://github.com/Crawlora-org/crawlora-mcp) | Version `1.17.8`. Hosted (and local stdio) Model Context Protocol server exposing the public API as 3465 MCP tools. Connect any MCP client to `https://mcp.crawlora.net/mcp`. |
-| Agent Skills | [`crawlora-skills`](https://github.com/Crawlora-org/crawlora-skills) | Version `1.24.9`. 144 installable skills, including 106 bundled installable [Agent Skills](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview) (`SKILL.md` packages) plus per-platform skills that teach any coding agent — Claude Code, Codex, Cursor, Copilot — how to fetch structured web data over the REST API. Recent additions include book/film/streaming comparisons, forecast consensus, SEC insider and institutional filings, chain-store footprints, used-car price histories, investor/developer discovery, patent landscapes, and flight comparisons. No MCP setup required. Also a Claude Code plugin marketplace. |
+| Agent Skills | [`crawlora-skills`](https://github.com/Crawlora-org/crawlora-skills) | Version `1.24.10`. 150 installable skills, including 112 bundled installable [Agent Skills](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview) (`SKILL.md` packages) plus per-platform skills that teach any coding agent — Claude Code, Codex, Cursor, Copilot — how to fetch structured web data over the REST API. Recent additions include app privacy, complaints, broadcast coverage, game-price history, open-source shortlists, podcast landscapes, book/film/streaming comparisons, forecast consensus, and SEC filings. No MCP setup required. Also a Claude Code plugin marketplace. |
 | OpenClaw | [`crawlora-openclaw-skill`](https://github.com/Crawlora-org/crawlora-openclaw-skill) | Version `1.3.1`. ClawHub MCP skill plus a native tool plugin for the [OpenClaw](https://github.com/openclaw/openclaw) personal AI agent. |
 | Zapier | [`zapier-crawlora`](https://github.com/Crawlora-org/zapier-crawlora) | Zapier integration with Get Page Content, Web Search, and Find Website Contacts actions for no-code Zaps. |
 | n8n | [`n8n-nodes-crawlora`](https://github.com/Crawlora-org/n8n-nodes-crawlora) | Version `0.9.0`. n8n community node exposing 253 curated operations across 26 resources, generated from the OpenAPI spec and usable as a tool in the n8n AI Agent. |
 | Make | [`make-app-crawlora`](https://github.com/Crawlora-org/make-app-crawlora) | Custom app definition for Make — Get Page Content, Web Search, and Find Website Contacts modules plus a universal "Make an API Call" module. |
 
 The **Agent Skills** are standalone-REST recipes — an umbrella `crawlora` catalog
-skill plus 143 focused skills, including `local-competitive-landscape`, `earnings-event-research`, `used-car-market-comparison`,
+skill plus 149 focused skills, including `local-competitive-landscape`, `earnings-event-research`, `used-car-market-comparison`,
 `software-vendor-shortlisting`, `restaurant-menu-benchmarking`,
 `retail-assortment-gap-analysis`, `short-term-rental-market-research`, `google-maps-research`,
 `local-business-prospecting`, `influencer-discovery`,
