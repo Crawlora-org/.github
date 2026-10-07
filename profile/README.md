@@ -43,15 +43,16 @@ surfaces.
 
 ## SDKs
 
-Focused JavaScript/TypeScript and Python clients are available as source for
-four platforms. Each uses Crawlora's hosted API and requires a Crawlora API key.
+Focused JavaScript/TypeScript and Python clients are published at version
+`0.1.1` for four platforms. Each uses Crawlora's hosted API and requires a
+Crawlora API key.
 
-| Platform | Operations | Repository |
-| --- | --- | --- |
-| SofaScore | 15 | [`crawlora-sofascore`](https://github.com/Crawlora-org/crawlora-sofascore) |
-| Flashscore | 24 | [`crawlora-flashscore`](https://github.com/Crawlora-org/crawlora-flashscore) |
-| FotMob | 31 | [`crawlora-fotmob`](https://github.com/Crawlora-org/crawlora-fotmob) |
-| YouTube | 14 | [`crawlora-youtube`](https://github.com/Crawlora-org/crawlora-youtube) |
+| Platform | Operations | Repository | npm | PyPI |
+| --- | --- | --- | --- | --- |
+| SofaScore | 15 | [`crawlora-sofascore`](https://github.com/Crawlora-org/crawlora-sofascore) | [`@crawlora-org/sofascore`](https://www.npmjs.com/package/@crawlora-org/sofascore) | [`crawlora-sofascore`](https://pypi.org/project/crawlora-sofascore/) |
+| Flashscore | 24 | [`crawlora-flashscore`](https://github.com/Crawlora-org/crawlora-flashscore) | [`@crawlora-org/flashscore`](https://www.npmjs.com/package/@crawlora-org/flashscore) | [`crawlora-flashscore`](https://pypi.org/project/crawlora-flashscore/) |
+| FotMob | 31 | [`crawlora-fotmob`](https://github.com/Crawlora-org/crawlora-fotmob) | [`@crawlora-org/fotmob`](https://www.npmjs.com/package/@crawlora-org/fotmob) | [`crawlora-fotmob`](https://pypi.org/project/crawlora-fotmob/) |
+| YouTube | 14 | [`crawlora-youtube`](https://github.com/Crawlora-org/crawlora-youtube) | [`@crawlora-org/youtube`](https://www.npmjs.com/package/@crawlora-org/youtube) | [`crawlora-youtube`](https://pypi.org/project/crawlora-youtube/) |
 
 See each repository for package availability, installation, examples, and
 platform-specific response formats.
