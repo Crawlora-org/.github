@@ -41,22 +41,36 @@ The generated SDKs and MCP catalog track the same public API contract. The n8n,
 Zapier, and Make integrations intentionally expose smaller, workflow-oriented
 surfaces.
 
-## SDKs
+## Focused Platform Clients
 
-Focused JavaScript/TypeScript and Python clients are published for four
-platforms. Each uses Crawlora's hosted API and requires a Crawlora API key.
-Daily contract checks synchronize endpoint updates and publish each platform's
-packages after validation; see the repository and registry links for releases.
+Choose a focused package when you want just one platform's endpoints. Each
+client calls Crawlora's hosted API and needs `CRAWLORA_API_KEY`; create an
+account at [crawlora.net](https://crawlora.net/signup) and get a key in the
+[console](https://crawlora.net/app). Daily contract checks discover additions
+and synchronize all six language packages after validation.
 
-| Platform | Operations | Repository | npm | PyPI |
-| --- | --- | --- | --- | --- |
-| SofaScore | 15 | [`crawlora-sofascore`](https://github.com/Crawlora-org/crawlora-sofascore) | [`@crawlora-org/sofascore`](https://www.npmjs.com/package/@crawlora-org/sofascore) | [`crawlora-sofascore`](https://pypi.org/project/crawlora-sofascore/) |
-| Flashscore | 24 | [`crawlora-flashscore`](https://github.com/Crawlora-org/crawlora-flashscore) | [`@crawlora-org/flashscore`](https://www.npmjs.com/package/@crawlora-org/flashscore) | [`crawlora-flashscore`](https://pypi.org/project/crawlora-flashscore/) |
-| FotMob | 31 | [`crawlora-fotmob`](https://github.com/Crawlora-org/crawlora-fotmob) | [`@crawlora-org/fotmob`](https://www.npmjs.com/package/@crawlora-org/fotmob) | [`crawlora-fotmob`](https://pypi.org/project/crawlora-fotmob/) |
-| YouTube | 14 | [`crawlora-youtube`](https://github.com/Crawlora-org/crawlora-youtube) | [`@crawlora-org/youtube`](https://www.npmjs.com/package/@crawlora-org/youtube) | [`crawlora-youtube`](https://pypi.org/project/crawlora-youtube/) |
+| Platform | Operations | Release | Repository | Language registries |
+| --- | ---: | --- | --- | --- |
+| SofaScore | 43 | `0.2.0` | [`crawlora-sofascore`](https://github.com/Crawlora-org/crawlora-sofascore) | [npm](https://www.npmjs.com/package/@crawlora-org/sofascore) · [PyPI](https://pypi.org/project/crawlora-sofascore/) · [Go module](https://github.com/Crawlora-org/crawlora-sofascore) · [RubyGems](https://rubygems.org/gems/crawlora-sofascore) · [Maven Central](https://central.sonatype.com/artifact/net.crawlora/crawlora-sofascore) / [GitHub Packages](https://github.com/Crawlora-org/crawlora-sofascore/packages) · [Packagist](https://packagist.org/packages/crawlora/sofascore) |
+| Flashscore | 38 | `0.2.0` | [`crawlora-flashscore`](https://github.com/Crawlora-org/crawlora-flashscore) | [npm](https://www.npmjs.com/package/@crawlora-org/flashscore) · [PyPI](https://pypi.org/project/crawlora-flashscore/) · [Go module](https://github.com/Crawlora-org/crawlora-flashscore) · [RubyGems](https://rubygems.org/gems/crawlora-flashscore) · [Maven Central](https://central.sonatype.com/artifact/net.crawlora/crawlora-flashscore) / [GitHub Packages](https://github.com/Crawlora-org/crawlora-flashscore/packages) · [Packagist](https://packagist.org/packages/crawlora/flashscore) |
+| FotMob | 31 | `0.1.4` | [`crawlora-fotmob`](https://github.com/Crawlora-org/crawlora-fotmob) | [npm](https://www.npmjs.com/package/@crawlora-org/fotmob) · [PyPI](https://pypi.org/project/crawlora-fotmob/) · [Go module](https://github.com/Crawlora-org/crawlora-fotmob) · [RubyGems](https://rubygems.org/gems/crawlora-fotmob) · [Maven Central](https://central.sonatype.com/artifact/net.crawlora/crawlora-fotmob) / [GitHub Packages](https://github.com/Crawlora-org/crawlora-fotmob/packages) · [Packagist](https://packagist.org/packages/crawlora/fotmob) |
+| YouTube | 14 | `0.1.4` | [`crawlora-youtube`](https://github.com/Crawlora-org/crawlora-youtube) | [npm](https://www.npmjs.com/package/@crawlora-org/youtube) · [PyPI](https://pypi.org/project/crawlora-youtube/) · [Go module](https://github.com/Crawlora-org/crawlora-youtube) · [RubyGems](https://rubygems.org/gems/crawlora-youtube) · [Maven Central](https://central.sonatype.com/artifact/net.crawlora/crawlora-youtube) / [GitHub Packages](https://github.com/Crawlora-org/crawlora-youtube/packages) · [Packagist](https://packagist.org/packages/crawlora/youtube) |
 
-See each repository for package availability, installation, examples, and
-platform-specific response formats.
+Install the focused clients for a platform such as SofaScore:
+
+```sh
+npm install @crawlora-org/sofascore
+python -m pip install crawlora-sofascore
+go get github.com/Crawlora-org/crawlora-sofascore@latest
+gem install crawlora-sofascore
+composer require crawlora/sofascore
+```
+
+For Java, add `net.crawlora:crawlora-sofascore` to your Maven dependencies. The
+Java packages are also mirrored to GitHub Packages. See each repository README
+for runnable calls and response formats.
+
+## General SDKs
 
 Beta SDKs are available for the current public API contract in six languages —
 Go, TypeScript/JavaScript, Python, Ruby, Java, and PHP. They include API-key
