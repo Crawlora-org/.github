@@ -43,9 +43,10 @@ surfaces.
 
 ## SDKs
 
-Focused JavaScript/TypeScript and Python clients are published at version
-`0.1.1` for four platforms. Each uses Crawlora's hosted API and requires a
-Crawlora API key.
+Focused JavaScript/TypeScript and Python clients are published for four
+platforms. Each uses Crawlora's hosted API and requires a Crawlora API key.
+Daily contract checks synchronize endpoint updates and publish each platform's
+packages after validation; see the repository and registry links for releases.
 
 | Platform | Operations | Repository | npm | PyPI |
 | --- | --- | --- | --- | --- |
