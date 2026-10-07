@@ -43,6 +43,19 @@ surfaces.
 
 ## SDKs
 
+Focused JavaScript/TypeScript and Python clients are available as source for
+four platforms. Each uses Crawlora's hosted API and requires a Crawlora API key.
+
+| Platform | Operations | Repository |
+| --- | --- | --- |
+| SofaScore | 15 | [`crawlora-sofascore`](https://github.com/Crawlora-org/crawlora-sofascore) |
+| Flashscore | 24 | [`crawlora-flashscore`](https://github.com/Crawlora-org/crawlora-flashscore) |
+| FotMob | 31 | [`crawlora-fotmob`](https://github.com/Crawlora-org/crawlora-fotmob) |
+| YouTube | 14 | [`crawlora-youtube`](https://github.com/Crawlora-org/crawlora-youtube) |
+
+See each repository for package availability, installation, examples, and
+platform-specific response formats.
+
 Beta SDKs are available for the current public API contract in six languages —
 Go, TypeScript/JavaScript, Python, Ruby, Java, and PHP. They include API-key
 auth, base URL overrides, retries, per-request options, grouped endpoint access,
