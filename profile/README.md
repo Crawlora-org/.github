@@ -46,8 +46,8 @@ surfaces.
 Choose a focused package when you want just one platform's endpoints. Each
 client calls Crawlora's hosted API and needs `CRAWLORA_API_KEY`; create an
 account at [crawlora.net](https://crawlora.net/signup) and get a key in the
-[console](https://crawlora.net/app). Daily contract checks discover additions
-and synchronize all six language packages after validation.
+[console](https://crawlora.net/app). Service usage follows your Crawlora
+account plan; each package README includes runnable examples and API reference links.
 
 | Platform | Operations | Release | Repository | Language registries |
 | --- | ---: | --- | --- | --- |
@@ -55,6 +55,7 @@ and synchronize all six language packages after validation.
 | Flashscore | 38 | `0.2.0` | [`crawlora-flashscore`](https://github.com/Crawlora-org/crawlora-flashscore) | [npm](https://www.npmjs.com/package/@crawlora-org/flashscore) · [PyPI](https://pypi.org/project/crawlora-flashscore/) · [Go module](https://github.com/Crawlora-org/crawlora-flashscore) · [RubyGems](https://rubygems.org/gems/crawlora-flashscore) · [Maven Central](https://central.sonatype.com/artifact/net.crawlora/crawlora-flashscore) / [GitHub Packages](https://github.com/Crawlora-org/crawlora-flashscore/packages) · [Packagist](https://packagist.org/packages/crawlora/flashscore) |
 | FotMob | 31 | `0.1.4` | [`crawlora-fotmob`](https://github.com/Crawlora-org/crawlora-fotmob) | [npm](https://www.npmjs.com/package/@crawlora-org/fotmob) · [PyPI](https://pypi.org/project/crawlora-fotmob/) · [Go module](https://github.com/Crawlora-org/crawlora-fotmob) · [RubyGems](https://rubygems.org/gems/crawlora-fotmob) · [Maven Central](https://central.sonatype.com/artifact/net.crawlora/crawlora-fotmob) / [GitHub Packages](https://github.com/Crawlora-org/crawlora-fotmob/packages) · [Packagist](https://packagist.org/packages/crawlora/fotmob) |
 | YouTube | 14 | `0.1.4` | [`crawlora-youtube`](https://github.com/Crawlora-org/crawlora-youtube) | [npm](https://www.npmjs.com/package/@crawlora-org/youtube) · [PyPI](https://pypi.org/project/crawlora-youtube/) · [Go module](https://github.com/Crawlora-org/crawlora-youtube) · [RubyGems](https://rubygems.org/gems/crawlora-youtube) · [Maven Central](https://central.sonatype.com/artifact/net.crawlora/crawlora-youtube) / [GitHub Packages](https://github.com/Crawlora-org/crawlora-youtube/packages) · [Packagist](https://packagist.org/packages/crawlora/youtube) |
+| Better Business Bureau | 9 | `0.1.0` | [`crawlora-bbb`](https://github.com/Crawlora-org/crawlora-bbb) | [npm](https://www.npmjs.com/package/@crawlora-org/bbb) · [PyPI](https://pypi.org/project/crawlora-bbb/) · [Go module](https://github.com/Crawlora-org/crawlora-bbb) · [RubyGems](https://rubygems.org/gems/crawlora-bbb) · [Maven Central](https://central.sonatype.com/artifact/net.crawlora/crawlora-bbb) / [GitHub Packages](https://github.com/Crawlora-org/crawlora-bbb/packages) · [Packagist](https://packagist.org/packages/crawlora/bbb) |
 
 Install the focused clients for a platform such as SofaScore:
 
