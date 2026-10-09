@@ -6,10 +6,10 @@ geodata signals without maintaining scraper infrastructure yourself.
 
 ## Start Here
 
-- Website: [https://crawlora.net](https://crawlora.net?utm_source=github&utm_medium=referral&utm_campaign=github-org-profile)
-- API docs: [https://crawlora.net/docs](https://crawlora.net/docs?utm_source=github&utm_medium=referral&utm_campaign=github-org-profile)
-- Playground: [https://crawlora.net/playground](https://crawlora.net/playground?utm_source=github&utm_medium=referral&utm_campaign=github-org-profile)
-- Pricing: [https://crawlora.net/pricing](https://crawlora.net/pricing?utm_source=github&utm_medium=referral&utm_campaign=github-org-profile)
+- Website: [https://crawlora.net](https://crawlora.net?utm_source=github&utm_medium=referral&utm_campaign=github-org-profile&utm_content=website)
+- API docs: [https://crawlora.net/docs](https://crawlora.net/docs?utm_source=github&utm_medium=referral&utm_campaign=github-org-profile&utm_content=api-docs)
+- Playground: [https://crawlora.net/playground](https://crawlora.net/playground?utm_source=github&utm_medium=referral&utm_campaign=github-org-profile&utm_content=playground)
+- Pricing: [https://crawlora.net/pricing](https://crawlora.net/pricing?utm_source=github&utm_medium=referral&utm_campaign=github-org-profile&utm_content=pricing)
 - API status: https://uptime.crawlora.net/status/crawlora-api
 - Support: support@crawlora.net
 
@@ -45,8 +45,8 @@ surfaces.
 
 Choose a focused package when you want just one platform's endpoints. Each
 client calls Crawlora's hosted API and needs `CRAWLORA_API_KEY`; create an
-account at [crawlora.net](https://crawlora.net/signup) and get a key in the
-[console](https://crawlora.net/app). Service usage follows your Crawlora
+account at [crawlora.net](https://crawlora.net/signup?utm_source=github&utm_medium=referral&utm_campaign=platform-clients&utm_content=client-packages-signup) and get a key in the
+[console](https://crawlora.net/app?utm_source=github&utm_medium=referral&utm_campaign=platform-clients&utm_content=client-packages-console). Service usage follows your Crawlora
 account plan; each package README includes runnable examples and API reference links.
 
 | Platform | Operations | Release | Repository | Language registries |
