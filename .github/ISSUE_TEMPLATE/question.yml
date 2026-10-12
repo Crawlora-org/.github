@@ -1,0 +1,29 @@
+name: Question
+description: Ask a usage question about a Crawlora repository or service.
+title: "question: "
+body:
+  - type: markdown
+    attributes:
+      value: Check the documentation linked from the repository README first. Never include API keys, cookies, access tokens, or other secrets.
+  - type: input
+    id: repository
+    attributes:
+      label: Repository or service
+      description: Which Crawlora project are you using?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version and environment
+      description: Include the package version, language/runtime, or service URL if relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: What do you need help with?
+      description: Include a minimal example with credentials removed.
+    validations:
+      required: true
+

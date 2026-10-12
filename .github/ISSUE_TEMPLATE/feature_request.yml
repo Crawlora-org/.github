@@ -1,0 +1,29 @@
+name: Feature request
+description: Suggest a capability or improvement.
+title: "feature: "
+body:
+  - type: markdown
+    attributes:
+      value: For generated SDK and platform-client repositories, use this issue form to request a change; pull requests against generated package code are overwritten during regeneration.
+  - type: input
+    id: repository
+    attributes:
+      label: Repository or service
+      description: Where would this capability belong?
+    validations:
+      required: true
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Use case
+      description: What are you trying to do, and what is difficult today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Describe the capability and any relevant endpoint, operation, or language.
+    validations:
+      required: true
+
