@@ -1,0 +1,37 @@
+name: Bug report
+description: Report a reproducible problem with a Crawlora repository or service.
+title: "bug: "
+body:
+  - type: markdown
+    attributes:
+      value: Never include API keys, cookies, access tokens, or other secrets. Report security vulnerabilities privately using the Security contact at https://crawlora.net/contact.
+  - type: input
+    id: repository
+    attributes:
+      label: Repository or service
+      description: Which Crawlora repository or service is affected?
+      placeholder: crawlora-tiktok or Crawlora API
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version and environment
+      description: Include the package version, language/runtime, or service URL if relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include the endpoint or operation, steps to reproduce, and the expected and actual results.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant output
+      description: Add a short error message or redacted log excerpt. Remove credentials and personal data.
+    validations:
+      required: false
+
