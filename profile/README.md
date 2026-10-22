@@ -31,7 +31,7 @@ curl -sS \
 
 | Surface | Current release | Coverage |
 | --- | --- | --- |
-| Public SDK contract | `v1.48.0-sdk.1` | 3737 generated operations across Go, TypeScript/JavaScript, Python, Ruby, Java, and PHP |
+| Public SDK releases | `v1.48.0-sdk.1` (Go, TypeScript, Python, Ruby, Java, PHP); `v1.49.0-sdk.1` (Rust) | 3,737 generated operations in the six established SDKs; 3,767 in Rust |
 | Hosted MCP | [`crawlora-mcp@1.17.13`](https://www.npmjs.com/package/crawlora-mcp) | 3665 tools across 472 platform groups |
 | Agent Skills | [`crawlora-skills@1.24.22`](https://github.com/Crawlora-org/crawlora-skills) | 169 installable skills, including 131 bundled skills and focused workflows for creator/sports, business identity, job comparisons, pet care, supply chains, product histories, football, Reddit sentiment, Reverb used-gear price history, and BBB Scam Tracker patterns |
 | OpenClaw | [`crawlora-openclaw-skill@1.3.1`](https://github.com/Crawlora-org/crawlora-openclaw-skill) | Hosted-MCP skill plus native tool plugin |
@@ -88,12 +88,14 @@ for runnable calls and response formats.
 
 ## General SDKs
 
-Beta SDKs are available for the current public API contract in six languages —
-Go, TypeScript/JavaScript, Python, Ruby, Java, and PHP. They include API-key
-auth, base URL overrides, retries, per-request options, grouped endpoint access,
+Beta SDKs are available in seven languages — Go, TypeScript/JavaScript, Python,
+Ruby, Java, PHP, and Rust. The Rust release covers 3,767 generated operations;
+the six established SDKs remain on their 3,737-operation `v1.48.0-sdk.1` release
+until the next coordinated regeneration. SDKs include API-key authentication,
+base URL overrides, retries, per-request options, grouped endpoint access,
 generated typed endpoint helpers, typed dynamic operation calls, pagination,
-middleware hooks, operation reference docs, usage recipes, and CI-backed release
-checks. See each repository README for language-specific details.
+operation reference docs, usage recipes, and CI-backed release checks. See each
+repository README for language-specific details.
 
 | Language | Repository | Current release |
 | --- | --- | --- |
@@ -103,6 +105,7 @@ checks. See each repository README for language-specific details.
 | Ruby | [`crawlora-ruby-sdk`](https://github.com/Crawlora-org/crawlora-ruby-sdk) | `v1.48.0-sdk.1` / `latest` — gem [`crawlora`](https://rubygems.org/gems/crawlora) on RubyGems (and GitHub Packages) |
 | Java / JVM | [`crawlora-java-sdk`](https://github.com/Crawlora-org/crawlora-java-sdk) | `v1.48.0-sdk.1` / `latest` — [`net.crawlora:crawlora-sdk`](https://central.sonatype.com/artifact/net.crawlora/crawlora-sdk) on Maven Central (and GitHub Packages) |
 | PHP | [`crawlora-php-sdk`](https://github.com/Crawlora-org/crawlora-php-sdk) | `v1.48.0-beta.1` — [`crawlora/sdk`](https://packagist.org/packages/crawlora/sdk) on Packagist (`^1.48@beta`) |
+| Rust | [`crawlora-rust-sdk`](https://github.com/Crawlora-org/crawlora-rust-sdk) | `v1.49.0-sdk.1` — [`crawlora`](https://crates.io/crates/crawlora) on crates.io |
 
 Install:
 
@@ -110,10 +113,12 @@ Install:
 go get github.com/Crawlora-org/crawlora-go-sdk@latest
 npm install @crawlora-org/sdk@latest
 pip install --pre crawlora
+cargo add crawlora@1.49.0-sdk.1
 ```
 
 For reproducible installs, pin `v1.48.0-sdk.1` for Git-based SDKs and
-`@crawlora-org/sdk@1.48.0-sdk.1` for TypeScript.
+`@crawlora-org/sdk@1.48.0-sdk.1` for TypeScript; Rust users can pin
+`crawlora = "1.49.0-sdk.1"` in `Cargo.toml`.
 
 The Ruby, Java, and PHP SDKs carry the same generated contract and client
 features and are all published to their language registries: Ruby (`crawlora`)
