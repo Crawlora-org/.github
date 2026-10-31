@@ -31,11 +31,11 @@ curl -sS \
 
 | Surface | Current release | Coverage |
 | --- | --- | --- |
-| Public SDK releases | `v1.50.0-sdk.1` (Go, TypeScript, Python, Ruby, Java, PHP); `v1.50.0-sdk.1` (Rust) | 4,012 generated operations in the six established SDKs; 4,012 in Rust |
-| Hosted MCP | [`crawlora-mcp@1.17.16`](https://www.npmjs.com/package/crawlora-mcp) | 3926 tools across 488 platform groups |
-| Agent Skills | [`crawlora-skills@1.24.30`](https://github.com/Crawlora-org/crawlora-skills) | 177 installable skills, including 139 bundled skills and focused workflows for creator/sports, business identity, job comparisons, pet care, supply chains, product histories, dataset-only AI-readiness snapshots, GoodRx health information, beginner-friendly football match analysis, Reddit sentiment, Reverb used-gear price history, and BBB Scam Tracker patterns |
+| Public SDK releases | `v1.50.0` (Go, TypeScript, Python, Ruby, Java, PHP); `v1.50.0` (Rust) | 4,140 generated operations in the six established SDKs; 4,140 in Rust |
+| Hosted MCP | [`crawlora-mcp@1.17.17`](https://www.npmjs.com/package/crawlora-mcp) | 4115 tools across 498 platform groups |
+| Agent Skills | [`crawlora-skills@1.24.31`](https://github.com/Crawlora-org/crawlora-skills) | 177 installable skills, including 139 bundled skills and focused workflows for creator/sports, business identity, job comparisons, pet care, supply chains, product histories, dataset-only AI-readiness snapshots, GoodRx health information, beginner-friendly football match analysis, Reddit sentiment, Reverb used-gear price history, and BBB Scam Tracker patterns |
 | OpenClaw | [`crawlora-openclaw-skill@1.3.1`](https://github.com/Crawlora-org/crawlora-openclaw-skill) | Hosted-MCP skill plus native tool plugin |
-| n8n | [`n8n-nodes-crawlora@0.9.0`](https://www.npmjs.com/package/n8n-nodes-crawlora) | 253 curated operations across 26 resources |
+| n8n | [`n8n-nodes-crawlora@0.10.0`](https://www.npmjs.com/package/n8n-nodes-crawlora) | 266 curated operations across 26 resources |
 
 The generated SDKs and MCP catalog track the same public API contract. The n8n,
 Zapier, and Make integrations intentionally expose smaller, workflow-oriented
@@ -88,9 +88,9 @@ for runnable calls and response formats.
 
 ## General SDKs
 
-Beta SDKs are available in seven languages — Go, TypeScript/JavaScript, Python,
-Ruby, Java, PHP, and Rust. All seven SDKs cover the same 3,915 generated
-operations in `v1.50.0-sdk.1` after this coordinated regeneration. SDKs include
+Stable SDKs are available in seven languages — Go, TypeScript/JavaScript, Python,
+Ruby, Java, PHP, and Rust. All seven SDKs cover the same 4,140 generated
+operations in `v1.50.0` after this coordinated regeneration. SDKs include
 API-key authentication, base URL overrides, retries, per-request options, grouped endpoint access,
 generated typed endpoint helpers, typed dynamic operation calls, pagination,
 operation reference docs, usage recipes, and CI-backed release checks. See each
@@ -98,26 +98,26 @@ repository README for language-specific details.
 
 | Language | Repository | Current release |
 | --- | --- | --- |
-| Go | [`crawlora-go-sdk`](https://github.com/Crawlora-org/crawlora-go-sdk) | `latest` for current SDK version `v1.50.0-sdk.1` |
-| TypeScript / JavaScript | [`crawlora-typescript-sdk`](https://github.com/Crawlora-org/crawlora-typescript-sdk) | `latest` for current SDK version `v1.50.0-sdk.1` / `@crawlora-org/sdk@1.50.0-sdk.1` on npm |
-| Python | [`crawlora-python-sdk`](https://github.com/Crawlora-org/crawlora-python-sdk) | [`crawlora`](https://pypi.org/project/crawlora/) on PyPI (`pip install --pre crawlora`) |
-| Ruby | [`crawlora-ruby-sdk`](https://github.com/Crawlora-org/crawlora-ruby-sdk) | `v1.50.0-sdk.1` / `latest` — gem [`crawlora`](https://rubygems.org/gems/crawlora) on RubyGems (and GitHub Packages) |
-| Java / JVM | [`crawlora-java-sdk`](https://github.com/Crawlora-org/crawlora-java-sdk) | `v1.50.0-sdk.1` / `latest` — [`net.crawlora:crawlora-sdk`](https://central.sonatype.com/artifact/net.crawlora/crawlora-sdk) on Maven Central (and GitHub Packages) |
-| PHP | [`crawlora-php-sdk`](https://github.com/Crawlora-org/crawlora-php-sdk) | `v1.50.0-beta.1` — [`crawlora/sdk`](https://packagist.org/packages/crawlora/sdk) on Packagist (`^1.50@beta`) |
-| Rust | [`crawlora-rust-sdk`](https://github.com/Crawlora-org/crawlora-rust-sdk) | `v1.50.0-sdk.1` — [`crawlora`](https://crates.io/crates/crawlora) on crates.io |
+| Go | [`crawlora-go-sdk`](https://github.com/Crawlora-org/crawlora-go-sdk) | `latest` for current SDK version `v1.50.0` |
+| TypeScript / JavaScript | [`crawlora-typescript-sdk`](https://github.com/Crawlora-org/crawlora-typescript-sdk) | `latest` for current SDK version `v1.50.0` / `@crawlora-org/sdk@1.50.0` on npm |
+| Python | [`crawlora-python-sdk`](https://github.com/Crawlora-org/crawlora-python-sdk) | [`crawlora`](https://pypi.org/project/crawlora/) on PyPI (`pip install crawlora`) |
+| Ruby | [`crawlora-ruby-sdk`](https://github.com/Crawlora-org/crawlora-ruby-sdk) | `v1.50.0` / `latest` — gem [`crawlora`](https://rubygems.org/gems/crawlora) on RubyGems (and GitHub Packages) |
+| Java / JVM | [`crawlora-java-sdk`](https://github.com/Crawlora-org/crawlora-java-sdk) | `v1.50.0` / `latest` — [`net.crawlora:crawlora-sdk`](https://central.sonatype.com/artifact/net.crawlora/crawlora-sdk) on Maven Central (and GitHub Packages) |
+| PHP | [`crawlora-php-sdk`](https://github.com/Crawlora-org/crawlora-php-sdk) | `v1.50.0` — [`crawlora/sdk`](https://packagist.org/packages/crawlora/sdk) on Packagist (`^1.50`) |
+| Rust | [`crawlora-rust-sdk`](https://github.com/Crawlora-org/crawlora-rust-sdk) | `v1.50.0` — [`crawlora`](https://crates.io/crates/crawlora) on crates.io |
 
 Install:
 
 ```sh
 go get github.com/Crawlora-org/crawlora-go-sdk@latest
 npm install @crawlora-org/sdk@latest
-pip install --pre crawlora
-cargo add crawlora@1.49.0-sdk.3
+pip install crawlora
+cargo add crawlora@1.50.0
 ```
 
-For reproducible installs, pin `v1.50.0-sdk.1` for Git-based SDKs and
-`@crawlora-org/sdk@1.50.0-sdk.1` for TypeScript; Rust users can pin
-`crawlora = "1.49.0-sdk.3"` in `Cargo.toml`.
+For reproducible installs, pin `v1.50.0` for Git-based SDKs and
+`@crawlora-org/sdk@1.50.0` for TypeScript; Rust users can pin
+`crawlora = "1.50.0"` in `Cargo.toml`.
 
 The Ruby, Java, and PHP SDKs carry the same generated contract and client
 features and are all published to their language registries: Ruby (`crawlora`)
@@ -125,11 +125,11 @@ on RubyGems, Java (`net.crawlora:crawlora-sdk`) on Maven Central, and PHP
 (`crawlora/sdk`) on Packagist (Ruby + Java are also mirrored to GitHub Packages).
 
 ```sh
-# Ruby — from RubyGems (a prerelease, so pass --pre):
-gem install crawlora --pre
+# Ruby — from RubyGems (the stable release):
+gem install crawlora
 
-# PHP — Composer-valid tagged beta from Packagist:
-composer require crawlora/sdk:^1.50@beta
+# PHP — Stable Composer release from Packagist:
+composer require crawlora/sdk:^1.50
 ```
 
 Java — from Maven Central (no extra repository needed):
@@ -138,7 +138,7 @@ Java — from Maven Central (no extra repository needed):
 <dependency>
   <groupId>net.crawlora</groupId>
   <artifactId>crawlora-sdk</artifactId>
-  <version>1.50.0-sdk.1</version>
+  <version>1.50.0</version>
 </dependency>
 ```
 
@@ -156,23 +156,22 @@ type stubs for endpoint groups, keyword parameters, and typed dynamic operation
 calls.
 
 TypeScript is published to npmjs and mirrored to GitHub Packages as
-`@crawlora-org/sdk`. Python is published to PyPI as `crawlora` (a `1.50.0.dev1`
-prerelease — install with `pip install --pre crawlora`).
+`@crawlora-org/sdk`. Python is published to PyPI as `crawlora` (a `1.50.0` stable release — install with `pip install crawlora`).
 
 ## Integrations
 
 Crawlora also ships ready-made integrations for AI agents, the Model Context
 Protocol (MCP), and no-code automation platforms. The hosted MCP server at
-`https://mcp.crawlora.net/mcp` exposes the public API as 3926 MCP tools using
+`https://mcp.crawlora.net/mcp` exposes the public API as 4115 MCP tools using
 stable `family.action` names.
 
 | Integration | Repository | What it is |
 | --- | --- | --- |
-| MCP server | [`crawlora-mcp`](https://github.com/Crawlora-org/crawlora-mcp) | Version `1.17.16`. Hosted (and local stdio) Model Context Protocol server exposing the public API as 3926 MCP tools. Connect any MCP client to `https://mcp.crawlora.net/mcp`. |
-| Agent Skills | [`crawlora-skills`](https://github.com/Crawlora-org/crawlora-skills) | Version `1.24.30`. 177 installable skills, including 139 bundled installable [Agent Skills](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview) (`SKILL.md` packages) plus per-platform skills that teach any coding agent — Claude Code, Codex, Cursor, Copilot — how to fetch structured web data over the REST API. Recent additions include creator/sports research, app releases, job comparisons, company identity, pet-provider shortlists, supply-chain concentration, podcasts, patents, SEC evidence, dataset-only AI-readiness snapshots, GoodRx health information, beginner-friendly football match analysis, Reddit sentiment, Reverb used-gear price history, and BBB Scam Tracker patterns. No MCP setup required. Also ships Claude Code, Codex, and Cursor plugin packages. |
+| MCP server | [`crawlora-mcp`](https://github.com/Crawlora-org/crawlora-mcp) | Version `1.17.17`. Hosted (and local stdio) Model Context Protocol server exposing the public API as 4115 MCP tools. Connect any MCP client to `https://mcp.crawlora.net/mcp`. |
+| Agent Skills | [`crawlora-skills`](https://github.com/Crawlora-org/crawlora-skills) | Version `1.24.31`. 177 installable skills, including 139 bundled installable [Agent Skills](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview) (`SKILL.md` packages) plus per-platform skills that teach any coding agent — Claude Code, Codex, Cursor, Copilot — how to fetch structured web data over the REST API. Recent additions include creator/sports research, app releases, job comparisons, company identity, pet-provider shortlists, supply-chain concentration, podcasts, patents, SEC evidence, dataset-only AI-readiness snapshots, GoodRx health information, beginner-friendly football match analysis, Reddit sentiment, Reverb used-gear price history, and BBB Scam Tracker patterns. No MCP setup required. Also ships Claude Code, Codex, and Cursor plugin packages. |
 | OpenClaw | [`crawlora-openclaw-skill`](https://github.com/Crawlora-org/crawlora-openclaw-skill) | Version `1.3.1`. ClawHub MCP skill plus a native tool plugin for the [OpenClaw](https://github.com/openclaw/openclaw) personal AI agent. |
 | Zapier | [`zapier-crawlora`](https://github.com/Crawlora-org/zapier-crawlora) | Zapier integration with Get Page Content, Web Search, and Find Website Contacts actions for no-code Zaps. |
-| n8n | [`n8n-nodes-crawlora`](https://github.com/Crawlora-org/n8n-nodes-crawlora) | Version `0.9.0`. n8n community node exposing 253 curated operations across 26 resources, generated from the OpenAPI spec and usable as a tool in the n8n AI Agent. |
+| n8n | [`n8n-nodes-crawlora`](https://github.com/Crawlora-org/n8n-nodes-crawlora) | Version `0.10.0`. n8n community node exposing 266 curated operations across 26 resources, generated from the OpenAPI spec and usable as a tool in the n8n AI Agent. |
 | Make | [`make-app-crawlora`](https://github.com/Crawlora-org/make-app-crawlora) | Custom app definition for Make — Get Page Content, Web Search, and Find Website Contacts modules plus a universal "Make an API Call" module. |
 
 The **Agent Skills** are standalone-REST recipes — an umbrella `crawlora` catalog
@@ -229,5 +228,5 @@ responses. Current endpoint families include:
 The SDKs are generated from Crawlora's public API contract and include small
 hand-written wrappers for authentication, base URL override, request execution,
 and grouped endpoint access. Public endpoint changes are reflected in the API
-docs and regenerated SDK contracts. SDK releases use explicit beta tags plus a
+docs and regenerated SDK contracts. SDK releases use final version tags plus a
 moving `latest` tag; the TypeScript SDK is also published to GitHub Packages.
