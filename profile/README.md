@@ -32,7 +32,7 @@ curl -sS \
 | Surface | Current release | Coverage |
 | --- | --- | --- |
 | Public SDK releases | `v1.50.0` (Go, TypeScript, Python, Ruby, Java, PHP); `v1.50.0` (Rust) | 4,140 generated operations in the six established SDKs; 4,140 in Rust |
-| Hosted MCP | [`crawlora-mcp@1.17.17`](https://www.npmjs.com/package/crawlora-mcp) | 4115 tools across 498 platform groups |
+| Hosted MCP | [`crawlora-mcp@1.17.18`](https://www.npmjs.com/package/crawlora-mcp) | 4186 tools across 500 platform groups |
 | Agent Skills | [`crawlora-skills@1.24.31`](https://github.com/Crawlora-org/crawlora-skills) | 177 installable skills, including 139 bundled skills and focused workflows for creator/sports, business identity, job comparisons, pet care, supply chains, product histories, dataset-only AI-readiness snapshots, GoodRx health information, beginner-friendly football match analysis, Reddit sentiment, Reverb used-gear price history, and BBB Scam Tracker patterns |
 | OpenClaw | [`crawlora-openclaw-skill@1.3.1`](https://github.com/Crawlora-org/crawlora-openclaw-skill) | Hosted-MCP skill plus native tool plugin |
 | n8n | [`n8n-nodes-crawlora@0.10.0`](https://www.npmjs.com/package/n8n-nodes-crawlora) | 266 curated operations across 26 resources |
@@ -162,12 +162,12 @@ TypeScript is published to npmjs and mirrored to GitHub Packages as
 
 Crawlora also ships ready-made integrations for AI agents, the Model Context
 Protocol (MCP), and no-code automation platforms. The hosted MCP server at
-`https://mcp.crawlora.net/mcp` exposes the public API as 4115 MCP tools using
+`https://mcp.crawlora.net/mcp` exposes the public API as 4186 MCP tools using
 stable `family.action` names.
 
 | Integration | Repository | What it is |
 | --- | --- | --- |
-| MCP server | [`crawlora-mcp`](https://github.com/Crawlora-org/crawlora-mcp) | Version `1.17.17`. Hosted (and local stdio) Model Context Protocol server exposing the public API as 4115 MCP tools. Connect any MCP client to `https://mcp.crawlora.net/mcp`. |
+| MCP server | [`crawlora-mcp`](https://github.com/Crawlora-org/crawlora-mcp) | Version `1.17.18`. Hosted (and local stdio) Model Context Protocol server exposing the public API as 4186 MCP tools. Connect any MCP client to `https://mcp.crawlora.net/mcp`. |
 | Agent Skills | [`crawlora-skills`](https://github.com/Crawlora-org/crawlora-skills) | Version `1.24.31`. 177 installable skills, including 139 bundled installable [Agent Skills](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview) (`SKILL.md` packages) plus per-platform skills that teach any coding agent — Claude Code, Codex, Cursor, Copilot — how to fetch structured web data over the REST API. Recent additions include creator/sports research, app releases, job comparisons, company identity, pet-provider shortlists, supply-chain concentration, podcasts, patents, SEC evidence, dataset-only AI-readiness snapshots, GoodRx health information, beginner-friendly football match analysis, Reddit sentiment, Reverb used-gear price history, and BBB Scam Tracker patterns. No MCP setup required. Also ships Claude Code, Codex, and Cursor plugin packages. |
 | OpenClaw | [`crawlora-openclaw-skill`](https://github.com/Crawlora-org/crawlora-openclaw-skill) | Version `1.3.1`. ClawHub MCP skill plus a native tool plugin for the [OpenClaw](https://github.com/openclaw/openclaw) personal AI agent. |
 | Zapier | [`zapier-crawlora`](https://github.com/Crawlora-org/zapier-crawlora) | Zapier integration with Get Page Content, Web Search, and Find Website Contacts actions for no-code Zaps. |
