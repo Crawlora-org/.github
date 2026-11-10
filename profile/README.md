@@ -31,9 +31,9 @@ curl -sS \
 
 | Surface | Current release | Coverage |
 | --- | --- | --- |
-| Public SDK releases | `v1.51.0` (Go, TypeScript, Python, Ruby, Java, PHP); `v1.50.0` (Rust) | 4,731 generated operations in the six established SDKs; 4,140 in Rust |
-| Hosted MCP | [`crawlora-mcp@1.17.20`](https://www.npmjs.com/package/crawlora-mcp) | 4,646 tools across 530 platform groups |
-| Agent Skills | [`crawlora-skills@1.24.32`](https://github.com/Crawlora-org/crawlora-skills) | 177 installable skills, including 139 bundled skills and focused workflows for creator/sports, business identity, job comparisons, pet care, supply chains, product histories, dataset-only AI-readiness snapshots, GoodRx health information, beginner-friendly football match analysis, Reddit sentiment, Reverb used-gear price history, and BBB Scam Tracker patterns |
+| Public SDK releases | `v1.51.0` (Go, TypeScript, Python, Ruby, Java, PHP); `v1.50.0` (Rust) | 4,769 generated operations in the six established SDKs; 4,140 in Rust |
+| MCP catalog | [`crawlora-mcp@1.17.20`](https://www.npmjs.com/package/crawlora-mcp) | 4,684 tools across 534 catalog groups |
+| Agent Skills | [`crawlora-skills@1.24.33`](https://github.com/Crawlora-org/crawlora-skills) | 177 installable skills, including 139 bundled skills and focused workflows for creator/sports, business identity, job comparisons, pet care, supply chains, product histories, dataset-only AI-readiness snapshots, GoodRx health information, beginner-friendly football match analysis, Reddit sentiment, Reverb used-gear price history, and BBB Scam Tracker patterns |
 | OpenClaw | [`crawlora-openclaw-skill@1.3.1`](https://github.com/Crawlora-org/crawlora-openclaw-skill) | Hosted-MCP skill plus native tool plugin |
 | n8n | [`n8n-nodes-crawlora@0.10.0`](https://www.npmjs.com/package/n8n-nodes-crawlora) | 266 curated operations across 26 resources |
 
@@ -89,7 +89,7 @@ for runnable calls and response formats.
 ## General SDKs
 
 Stable SDKs are available in seven languages — Go, TypeScript/JavaScript, Python,
-Ruby, Java, PHP, and Rust. The six established SDKs cover 4,731 generated
+Ruby, Java, PHP, and Rust. The six established SDKs cover 4,769 generated
 operations in `v1.51.0`; Rust remains on `v1.50.0` with 4,140 operations. SDKs include
 API-key authentication, base URL overrides, retries, per-request options, grouped endpoint access,
 generated typed endpoint helpers, typed dynamic operation calls, pagination,
@@ -162,13 +162,13 @@ TypeScript is published to npmjs and mirrored to GitHub Packages as
 
 Crawlora also ships ready-made integrations for AI agents, the Model Context
 Protocol (MCP), and no-code automation platforms. The hosted MCP server at
-`https://mcp.crawlora.net/mcp` exposes the public API as 4,646 MCP tools using
-stable `family.action` names.
+`https://mcp.crawlora.net/mcp` is the hosted endpoint. The `crawlora-mcp` package
+catalog contains 4,684 tools across 534 groups using stable `family.action` names.
 
 | Integration | Repository | What it is |
 | --- | --- | --- |
-| MCP server | [`crawlora-mcp`](https://github.com/Crawlora-org/crawlora-mcp) | Version `1.17.20`. Hosted (and local stdio) Model Context Protocol server exposing the public API as 4,646 MCP tools across 530 platform groups. Connect any MCP client to `https://mcp.crawlora.net/mcp`. |
-| Agent Skills | [`crawlora-skills`](https://github.com/Crawlora-org/crawlora-skills) | Version `1.24.32`. 177 installable skills, including 139 bundled installable [Agent Skills](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview) (`SKILL.md` packages) plus per-platform skills that teach any coding agent — Claude Code, Codex, Cursor, Copilot — how to fetch structured web data over the REST API. Recent additions include creator/sports research, app releases, job comparisons, company identity, pet-provider shortlists, supply-chain concentration, podcasts, patents, SEC evidence, dataset-only AI-readiness snapshots, GoodRx health information, beginner-friendly football match analysis, Reddit sentiment, Reverb used-gear price history, and BBB Scam Tracker patterns. No MCP setup required. Also ships Claude Code, Codex, and Cursor plugin packages. |
+| MCP server | [`crawlora-mcp`](https://github.com/Crawlora-org/crawlora-mcp) | Version `1.17.20`. The package and local stdio catalog contains 4,684 tools across 534 groups; the hosted endpoint is `https://mcp.crawlora.net/mcp`. |
+| Agent Skills | [`crawlora-skills`](https://github.com/Crawlora-org/crawlora-skills) | Version `1.24.33`. 177 installable skills, including 139 bundled installable [Agent Skills](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview) (`SKILL.md` packages) plus per-platform skills that teach any coding agent — Claude Code, Codex, Cursor, Copilot — how to fetch structured web data over the REST API. Recent additions include creator/sports research, app releases, job comparisons, company identity, pet-provider shortlists, supply-chain concentration, podcasts, patents, SEC evidence, dataset-only AI-readiness snapshots, GoodRx health information, beginner-friendly football match analysis, Reddit sentiment, Reverb used-gear price history, and BBB Scam Tracker patterns. No MCP setup required. Also ships Claude Code, Codex, and Cursor plugin packages. |
 | OpenClaw | [`crawlora-openclaw-skill`](https://github.com/Crawlora-org/crawlora-openclaw-skill) | Version `1.3.1`. ClawHub MCP skill plus a native tool plugin for the [OpenClaw](https://github.com/openclaw/openclaw) personal AI agent. |
 | Zapier | [`zapier-crawlora`](https://github.com/Crawlora-org/zapier-crawlora) | Zapier integration with Get Page Content, Web Search, and Find Website Contacts actions for no-code Zaps. |
 | n8n | [`n8n-nodes-crawlora`](https://github.com/Crawlora-org/n8n-nodes-crawlora) | Version `0.10.0`. n8n community node exposing 266 curated operations across 26 resources, generated from the OpenAPI spec and usable as a tool in the n8n AI Agent. |
