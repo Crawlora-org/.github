@@ -90,7 +90,7 @@ for runnable calls and response formats.
 
 Stable SDKs are available in seven languages — Go, TypeScript/JavaScript, Python,
 Ruby, Java, PHP, and Rust. The six established SDKs cover 4,769 generated
-operations in `v1.52.0`; Rust remains on `v1.52.0` with 4,140 operations. SDKs include
+operations in `v1.52.0`; Rust remains on `v1.50.0` with 4,140 operations. SDKs include
 API-key authentication, base URL overrides, retries, per-request options, grouped endpoint access,
 generated typed endpoint helpers, typed dynamic operation calls, pagination,
 operation reference docs, usage recipes, and CI-backed release checks. See each
