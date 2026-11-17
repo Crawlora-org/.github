@@ -31,7 +31,7 @@ curl -sS \
 
 | Surface | Current release | Coverage |
 | --- | --- | --- |
-| Public SDK releases | `v1.51.0` (Go, TypeScript, Python, Ruby, Java, PHP); `v1.50.0` (Rust) | 4,769 generated operations in the six established SDKs; 4,140 in Rust |
+| Public SDK releases | `v1.52.0` (Go, TypeScript, Python, Ruby, Java, PHP); `v1.50.0` (Rust) | 5,106 generated operations in the six established SDKs; 4,140 in Rust |
 | MCP catalog | [`crawlora-mcp@1.17.20`](https://www.npmjs.com/package/crawlora-mcp) | 4,684 tools across 534 catalog groups |
 | Agent Skills | [`crawlora-skills@1.24.34`](https://github.com/Crawlora-org/crawlora-skills) | 177 installable skills, including 139 bundled skills and focused workflows for creator/sports, business identity, job comparisons, pet care, supply chains, product histories, dataset-only AI-readiness snapshots, GoodRx health information, beginner-friendly football match analysis, Reddit sentiment, Reverb used-gear price history, and BBB Scam Tracker patterns |
 | OpenClaw | [`crawlora-openclaw-skill@1.3.1`](https://github.com/Crawlora-org/crawlora-openclaw-skill) | Hosted-MCP skill plus native tool plugin |
@@ -90,7 +90,7 @@ for runnable calls and response formats.
 
 Stable SDKs are available in seven languages — Go, TypeScript/JavaScript, Python,
 Ruby, Java, PHP, and Rust. The six established SDKs cover 4,769 generated
-operations in `v1.51.0`; Rust remains on `v1.50.0` with 4,140 operations. SDKs include
+operations in `v1.52.0`; Rust remains on `v1.52.0` with 4,140 operations. SDKs include
 API-key authentication, base URL overrides, retries, per-request options, grouped endpoint access,
 generated typed endpoint helpers, typed dynamic operation calls, pagination,
 operation reference docs, usage recipes, and CI-backed release checks. See each
@@ -98,12 +98,12 @@ repository README for language-specific details.
 
 | Language | Repository | Current release |
 | --- | --- | --- |
-| Go | [`crawlora-go-sdk`](https://github.com/Crawlora-org/crawlora-go-sdk) | `latest` for current SDK version `v1.51.0` |
-| TypeScript / JavaScript | [`crawlora-typescript-sdk`](https://github.com/Crawlora-org/crawlora-typescript-sdk) | `latest` for current SDK version `v1.51.0` / `@crawlora-org/sdk@1.51.0` on npm |
+| Go | [`crawlora-go-sdk`](https://github.com/Crawlora-org/crawlora-go-sdk) | `latest` for current SDK version `v1.52.0` |
+| TypeScript / JavaScript | [`crawlora-typescript-sdk`](https://github.com/Crawlora-org/crawlora-typescript-sdk) | `latest` for current SDK version `v1.52.0` / `@crawlora-org/sdk@1.52.0` on npm |
 | Python | [`crawlora-python-sdk`](https://github.com/Crawlora-org/crawlora-python-sdk) | [`crawlora`](https://pypi.org/project/crawlora/) on PyPI (`pip install crawlora`) |
-| Ruby | [`crawlora-ruby-sdk`](https://github.com/Crawlora-org/crawlora-ruby-sdk) | `v1.51.0` / `latest` — gem [`crawlora`](https://rubygems.org/gems/crawlora) on RubyGems (and GitHub Packages) |
-| Java / JVM | [`crawlora-java-sdk`](https://github.com/Crawlora-org/crawlora-java-sdk) | `v1.51.0` / `latest` — [`net.crawlora:crawlora-sdk`](https://central.sonatype.com/artifact/net.crawlora/crawlora-sdk) on Maven Central (and GitHub Packages) |
-| PHP | [`crawlora-php-sdk`](https://github.com/Crawlora-org/crawlora-php-sdk) | `v1.51.0` — [`crawlora/sdk`](https://packagist.org/packages/crawlora/sdk) on Packagist (`^1.51`) |
+| Ruby | [`crawlora-ruby-sdk`](https://github.com/Crawlora-org/crawlora-ruby-sdk) | `v1.52.0` / `latest` — gem [`crawlora`](https://rubygems.org/gems/crawlora) on RubyGems (and GitHub Packages) |
+| Java / JVM | [`crawlora-java-sdk`](https://github.com/Crawlora-org/crawlora-java-sdk) | `v1.52.0` / `latest` — [`net.crawlora:crawlora-sdk`](https://central.sonatype.com/artifact/net.crawlora/crawlora-sdk) on Maven Central (and GitHub Packages) |
+| PHP | [`crawlora-php-sdk`](https://github.com/Crawlora-org/crawlora-php-sdk) | `v1.52.0` — [`crawlora/sdk`](https://packagist.org/packages/crawlora/sdk) on Packagist (`^1.52`) |
 | Rust | [`crawlora-rust-sdk`](https://github.com/Crawlora-org/crawlora-rust-sdk) | `v1.50.0` — [`crawlora`](https://crates.io/crates/crawlora) on crates.io |
 
 Install:
@@ -115,8 +115,8 @@ pip install crawlora
 cargo add crawlora@1.50.0
 ```
 
-For reproducible installs, pin `v1.51.0` for the six established SDKs and
-`@crawlora-org/sdk@1.51.0` for TypeScript; Rust users can pin
+For reproducible installs, pin `v1.52.0` for the six established SDKs and
+`@crawlora-org/sdk@1.52.0` for TypeScript; Rust users can pin
 `crawlora = "1.50.0"` in `Cargo.toml`.
 
 The Ruby, Java, and PHP SDKs carry the same generated contract and client
@@ -138,7 +138,7 @@ Java — from Maven Central (no extra repository needed):
 <dependency>
   <groupId>net.crawlora</groupId>
   <artifactId>crawlora-sdk</artifactId>
-  <version>1.51.0</version>
+  <version>1.52.0</version>
 </dependency>
 ```
 
