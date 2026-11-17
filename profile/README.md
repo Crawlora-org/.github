@@ -102,7 +102,7 @@ repository README for language-specific details.
 | TypeScript / JavaScript | [`crawlora-typescript-sdk`](https://github.com/Crawlora-org/crawlora-typescript-sdk) | `latest` for current SDK version `v1.52.0` / `@crawlora-org/sdk@1.52.0` on npm |
 | Python | [`crawlora-python-sdk`](https://github.com/Crawlora-org/crawlora-python-sdk) | [`crawlora`](https://pypi.org/project/crawlora/) on PyPI (`pip install crawlora`) |
 | Ruby | [`crawlora-ruby-sdk`](https://github.com/Crawlora-org/crawlora-ruby-sdk) | `v1.52.0` / `latest` — gem [`crawlora`](https://rubygems.org/gems/crawlora) on RubyGems (and GitHub Packages) |
-| Java / JVM | [`crawlora-java-sdk`](https://github.com/Crawlora-org/crawlora-java-sdk) | `v1.52.0` / `latest` — [`net.crawlora:crawlora-sdk`](https://central.sonatype.com/artifact/net.crawlora/crawlora-sdk) on Maven Central (and GitHub Packages) |
+| Java / JVM | [`crawlora-java-sdk`](https://github.com/Crawlora-org/crawlora-java-sdk) | SDK source `v1.52.0` / 5,106 operations; Maven Central currently serves `1.51.0`; `1.52.0` publication is pending |
 | PHP | [`crawlora-php-sdk`](https://github.com/Crawlora-org/crawlora-php-sdk) | `v1.52.0` — [`crawlora/sdk`](https://packagist.org/packages/crawlora/sdk) on Packagist (`^1.52`) |
 | Rust | [`crawlora-rust-sdk`](https://github.com/Crawlora-org/crawlora-rust-sdk) | `v1.50.0` — [`crawlora`](https://crates.io/crates/crawlora) on crates.io |
 
@@ -115,7 +115,8 @@ pip install crawlora
 cargo add crawlora@1.50.0
 ```
 
-For reproducible installs, pin `v1.52.0` for the six established SDKs and
+The six SDK repositories are aligned at `v1.52.0`; Java Maven Central currently
+serves `1.51.0` pending publication of 1.52.0. Pin
 `@crawlora-org/sdk@1.52.0` for TypeScript; Rust users can pin
 `crawlora = "1.50.0"` in `Cargo.toml`.
 
@@ -138,7 +139,7 @@ Java — from Maven Central (no extra repository needed):
 <dependency>
   <groupId>net.crawlora</groupId>
   <artifactId>crawlora-sdk</artifactId>
-  <version>1.52.0</version>
+  <version>1.51.0</version>
 </dependency>
 ```
 
